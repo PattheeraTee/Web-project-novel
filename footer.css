@@ -1,6 +1,6 @@
 /* * {
     border: 1px solid yellow;
-} */
+}
 
 footer {
     line-height: 2rem;
@@ -20,6 +20,7 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: #E1F5FE;
+    transition: .1s;
 }
 
 footer .link {
@@ -34,4 +35,45 @@ footer .copyright {
 footer .copyright p {
     color: #ffffff;
     padding: 2rem;
+}
+
+footer .contact-icon {
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    color: #E1F5FE;
+    transition: .1s;
+}
+
+footer .link a:hover {
+    color: #FFD54F;
+}
+
+footer .link a i:hover {
+    color: #FFD54F;
+}
+
+footer .contact ul li:hover > a.box-icon i {
+    color: #FFD54F;
+}
+
+footer .contact ul li:hover > a.social-name {
+    color: #FFD54F;
+} */
+
+footer {
+    background-color: #03A9F4;
+}
+
+footer a {
+    text-decoration: none;
+    color: #E1F5FE;
+    transition: .1s;
+}
+
+footer ul li a:hover {
+    color: #FFD54F !important;
+}
+
+footer ul li a i {
+    padding-right: 0.5rem;
 }
