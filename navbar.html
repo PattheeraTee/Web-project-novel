@@ -1,157 +1,407 @@
-<!-- <nav>
-    <div class="nav-container-top">
-        <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
-        <ul>
-            <li><a href="#"><img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon"></a></li>
-            <li><a href="#"></a><img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon"></li>
-            <li><a href="#"><img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon"></a></li>
-            <li><a href="#"><img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon"></a></li>
-            <li><a href="#"><img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon"></a></li>
-        </ul>
-    </div>
-    <div class="nav-container-bottom">
-        <ul>
-            <li class="nav-home"><a href="#">หน้าหลัก</a></li>
-            <li class="nav-type"><a href="#">หมวดหมู่</a><i class="arrow-down bi bi-caret-down-fill ms-1"></i></i></li>
-            <li class="nav-top-chart ">
-                <a href="#">จัดอันดับ</a>
+<!-- <div class="container-fluid p-0">
+    <nav>
+        <div class="nav-container-top">
+            <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon">
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="nav-container-bottom">
+            <ul class="nav-level1">
+                <li class="nav-home nav-item">
+                    <a href="#">หน้าหลัก</a>
+                </li>
+                <li class="nav-type nav-item">
+                    <a href="#">หมวดหมู่</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="nav-level2">
+                        <li class="nav-item-level2">
+                            <a href="">โรแมนซ์</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ย้อนยุค</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">ย้อนยุคไทย</a>
+                                </li>
+                                <li class="nav-item-level3" >
+                                    <a href="">ย้อนยุคจีน</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">แฟนตาซี</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">สืบสวน</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ลึกลับ/สยองขวัญ</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">แอ็กชัน</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ดราม่า</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">นิยาย Y</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">นิยายชายรักชาย</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">นิยายหญิงรักหญิง</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ตลก</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-top-chart nav-item">
+                    <a href="#">จัดอันดับ</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="nav-level2">
+                        <li class="nav-item-level2">
+                            <a href="" class="">อันดับทั้งหมด</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="" class="">อันดับตามประเภท</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">โรแมนซ์</a>
+                                </li>
+                                <li class="nav-item-level3" class="nav-item-level3">
+                                    <a href="">ย้อนยุค</a>
+                                </li>
+                                <li>
+                                    <a href="">แฟนตาซี</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">สืบสวน</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ลึกลับ/สยองขวัญ</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">แอ็กชัน</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ดราม่า</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">นิยาย Y</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ตลก</a>
+                                </li class="nav-item-level3">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-activity nav-item">
+                    <a href="#">กิจกรรม</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div> -->
+<div class="container-fluid p-0 m-0" style="background-color:#03a9f4;">
+    <nav>
+        <div class="container-fluid d-flex justify-content-between py-1 px-5" style="background-color: white;">
+            <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
+            <ul class="d-flex gap-3 mt-3">
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon">
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="container nav-bottom" style="background-color: #03a9f4;">
+            <ul class="row level1">
+                <li class=" col-md-3 col-lg-3 level1-item text-center" id="menu1">
+                    <a href="#">หน้าหลัก</a>
+                </li>
+                <li class=" col-md-3 col-lg-3 level1-item text-center" id="menu2">
+                    <a href="#">หมวดหมู่</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="level2 text-start">
+                        <li class="level2-item">
+                            <a href="">โรแมนซ์</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ย้อนยุค</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">ย้อนยุคไทย</a>
+                                </li>
+                                <li class="level3-item" >
+                                    <a href="">ย้อนยุคจีน</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">แฟนตาซี</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">สืบสวน</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ลึกลับ/สยองขวัญ</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">แอ็กชัน</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ดราม่า</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">นิยาย Y</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">นิยายชายรักชาย</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">นิยายหญิงรักหญิง</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ตลก</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" col-md-3 col-lg-3  level1-item text-center" id="menu3">
+                    <a href="#">จัดอันดับ</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="level2 text-start">
+                        <li class="level2-item">
+                            <a href="" class="">อันดับทั้งหมด</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="" class="">อันดับตามประเภท</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">โรแมนซ์</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ย้อนยุค</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">แฟนตาซี</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">สืบสวน</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ลึกลับ/สยองขวัญ</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">แอ็กชัน</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ดราม่า</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">นิยาย Y</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ตลก</a>
+                                </li class="level3-item">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-sm-2 col-md-3 col-lg-3 level1-item text-center" id="menu4">
+                    <a href="#">กิจกรรม</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
                 <ul class="dropdown-menu">
-                    <li><a href="" class="dropdown-item"></a></li>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+</div>
+
+<!-- <ul class="nav-level1">
+    <li class="nav-home nav-item">
+        <a href="#">หน้าหลัก</a>
+    </li>
+    <li class="nav-type nav-item">
+        <a href="#">หมวดหมู่</a>
+        <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+        <ul class="nav-level2">
+            <li class="nav-item-level2">
+                <a href="">โรแมนซ์</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ย้อนยุค</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
+                        <a href="">ย้อนยุคไทย</a>
+                    </li>
+                    <li class="nav-item-level3" >
+                        <a href="">ย้อนยุคจีน</a>
+                    </li>
                 </ul>
             </li>
-            <li class="nav-activity"><a href="#">กิจกรรม</a></li>
+            <li class="nav-item-level2">
+                <a href="">แฟนตาซี</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">สืบสวน</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ลึกลับ/สยองขวัญ</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">แอ็กชัน</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ดราม่า</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">นิยาย Y</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
+                        <a href="">นิยายชายรักชาย</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">นิยายหญิงรักหญิง</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ตลก</a>
+            </li>
         </ul>
-    </div>
-</nav> -->
-<nav>
-    <div class="container-fluid nav-container-top">
-        <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon">
-                </a>
+    </li>
+    <li class="nav-top-chart nav-item">
+        <a href="#">จัดอันดับ</a>
+        <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+        <ul class="nav-level2">
+            <li class="nav-item-level2">
+                <a href="" class="">อันดับทั้งหมด</a>
             </li>
-            <li>
-                <a href="#">
-                    <img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon">
-                </a>
-            </li>
-        </ul> 
-    </div>
-    <div class="container-fluid nav-container-bottom">
-        <ul class="nav-level1">
-            <li class="nav-home">
-                <a href="#">หน้าหลัก</a>
-            </li>
-            <li class="nav-type">
-                <a href="#">หมวดหมู่</a>
-                <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
-                <ul class="nav-level2">
-                    <li>
+            <li class="nav-item-level2">
+                <a href="" class="">อันดับตามประเภท</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
                         <a href="">โรแมนซ์</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3" class="nav-item-level3">
                         <a href="">ย้อนยุค</a>
-                        <ul class="nav-level3">
-                            <li>
-                                <a href="">ย้อนยุคไทย</a>
-                            </li>
-                            <li>
-                                <a href="">ย้อนยุคจีน</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
                         <a href="">แฟนตาซี</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">สืบสวน</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">ลึกลับ/สยองขวัญ</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">แอ็กชัน</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">ดราม่า</a>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">นิยาย Y</a>
-                        <ul class="nav-level3">
-                            <li>
-                                <a href="">นิยายชายรักชาย</a>
-                            </li>
-                            <li>
-                                <a href="">นิยายหญิงรักหญิง</a>
-                            </li>
-                        </ul>
                     </li>
-                    <li>
+                    <li class="nav-item-level3">
                         <a href="">ตลก</a>
-                    </li>
+                    </li class="nav-item-level3">
                 </ul>
-            </li>
-            <li class="nav-top-chart">
-                <a href="#">จัดอันดับ</a>
-                <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
-                <ul class="nav-level2">
-                    <li>
-                        <a href="" class="">อันดับทั้งหมด</a>
-                    </li>
-                    <li>
-                        <a href="" class="">อันดับตามประเภท</a>
-                    </li>
-                    <ul class="nav-level3">
-                        <li>
-                            <a href="">โรแมนซ์</a>
-                        </li>
-                        <li>
-                            <a href="">ย้อนยุค</a>
-                        </li>
-                        <li>
-                            <a href="">แฟนตาซี</a>
-                        </li>
-                        <li>
-                            <a href="">สืบสวน</a>
-                        </li>
-                        <li>
-                            <a href="">ลึกลับ/สยองขวัญ</a>
-                        </li>
-                        <li>
-                            <a href="">แอ็กชัน</a>
-                        </li>
-                        <li>
-                            <a href="">ดราม่า</a>
-                        </li>
-                        <li>
-                            <a href="">นิยาย Y</a>
-                        </li>
-                        <li>
-                            <a href="">ตลก</a>
-                        </li>
-                    </ul>
-                </ul>
-            </li>
-            <li class="nav-activity">
-                <a href="#">กิจกรรม</a>
             </li>
         </ul>
-    </div>
-</nav>
+    </li>
+    <li class="nav-activity nav-item">
+        <a href="#">กิจกรรม</a>
+    </li>
+</ul> -->
