@@ -1,0 +1,37 @@
+/* * {
+    border: 1px solid yellow;
+} */
+
+footer {
+    line-height: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-position: inside;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #E1F5FE;
+}
+
+footer .link {
+    color: white;
+    background-color: #03A9F4;
+}
+
+footer .copyright {
+    background-color: #01579B;
+}
+
+footer .copyright p {
+    color: #ffffff;
+    padding: 2rem;
+}
