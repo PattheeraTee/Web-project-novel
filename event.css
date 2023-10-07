@@ -1,0 +1,60 @@
+.card {
+    background-color: #F7F7F7;
+}
+
+.slider-event,
+#carouselExampleDark,
+.carousel-inner,
+.carousel-item {
+    height: 30vh;
+}
+
+.slider-event {
+    width: 100%;
+    height: 100%;
+    min-height: 30vh;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .container-lg .event-left {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (min-width: 767px) {
+    .event-left img {
+        min-height: 20vh !important;
+    }
+
+    .event-right img {
+        min-height: 12vh !important;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .event-left .card4, .event-left .card3{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .slider-event,
+    #carouselExampleDark,
+    .carousel-inner,
+    .carousel-item {
+        min-height: 45vh;
+    }
+
+    .slider-event {
+        width: 100%;
+        height: 100%;
+        min-height: 45vh;
+        object-fit: cover;
+    }
+
+    .event-right img {
+        height: 15vh !important;
+    }
+}
