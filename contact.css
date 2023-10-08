@@ -6,15 +6,163 @@ button:hover {
     background-color: #01579B !important;
 }
 
-.contact-info a {
+.contactus {
+    position: relative;
+    width: 100%;
+}
+
+.infobox a {
     text-decoration: none;
     color: black;
 }
 
-.contact-info i {
+.infobox i {
     padding-right: 0.75rem;
 }
 
-.contact-info {
-    line-height: 2.5rem;
+.infobox {
+    line-height: 2.75rem;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    background-color: #f7f7f7;
+    padding: 2rem;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}    
+
+.contact h3 {
+    margin-bottom: 1rem;
+}
+
+.formbox {
+    position: relative;
+    width: 100%;
+}
+
+.formbox .row50 {
+    display: flex;
+    gap: 2rem;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+    width: 50%;
+}
+
+.formbox .row100 .inputbox {
+    width: 100%;
+}
+
+.inputbox span {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.inputbox input {
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.inputbox textarea {
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    resize: none;
+    min-height: 15rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputbox ::placeholder {
+    color: #999;
+}
+
+/* info */
+
+.sci {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.sci li{
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.sci li a{
+    font-size: 1.25rem;
+    transition: .2s;
+}
+
+.sci li a i{
+    color: #01579B;
+}
+
+.sci li a:hover {
+    color: #FFD54F !important;
+}
+
+/* map */
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact_page_container {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+@media (max-width: 991px) {
+    .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+        grid-gap: 1rem;
+        margin-top: 1rem;
+    } 
+
+    .map {
+        min-height: 19rem;
+    }
+
+    input {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
 }
