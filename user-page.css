@@ -1,0 +1,69 @@
+button {
+    color: #03A9F4 !important;
+    border-color: #03A9F4 !important;
+}
+
+button:hover {
+    color: #ffffff !important;
+    border-color: #03A9F4 !important;
+}
+
+.detail {
+    line-height: 3rem;
+}
+
+span i {
+    width: 1rem;
+    padding-right: 0.75rem;
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        min-height: 25vh;
+    }
+
+    .box-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .follow {
+        display: flex;
+        justify-content: center;
+    }
+
+    .penname {
+        gap: 0.5rem;
+    }
+
+    .detail .d-flex {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+
+    .d-flex .px-5 {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    p.description {
+        padding-top: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 767px) {
+    .card-img-top {
+        min-height: 20vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-img-top {
+        min-height: 25vh;
+    }
+}
+
