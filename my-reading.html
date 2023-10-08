@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เหรียญของฉัน</title>
+    <link rel="stylesheet" href="my-coins.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="pb-3 tw-bold">ชั้นหนังสือ</h3>
+        <div class="container py-2">
+            <!-- tabs -->
+            <nav>
+                <div class="nav nav-underline justify-content-center flex-nowrap" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-novel-tab" data-bs-toggle="tab" data-bs-target="#nav-novel"
+                        type="button" role="tab" aria-controls="nav-novel" aria-selected="true">นิยาย</button>
+
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-bookm"
+                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">บุ๊คมาร์ค</button>
+
+                    <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-foll"
+                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">ติดตาม</button>
+
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-read"
+                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">อ่านล่าสุด</button>
+
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-ment"
+                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">คอมเมนต์</button>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active p-3" id="nav-novel" role="tabpanel" aria-labelledby="nav-novel-tab">
+                </div>
+
+                <div class="tab-pane fade show p-3" id="nav-bookm" role="tabpanel" aria-labelledby="nav-bookm-tab">
+                </div>
+
+                <div class="tab-pane fade show p-3" id="nav-bookm" role="tabpanel" aria-labelledby="nav-bookm-tab">
+                </div>
+
+                <div class="tab-pane fade show p-3" id="nav-bookm" role="tabpanel" aria-labelledby="nav-bookm-tab">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
