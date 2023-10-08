@@ -1,3 +1,15 @@
 form {
-    font-size: 0.5rem !important;
+    font-size: 0.75rem;
+}
+
+select , option{
+    font-size: 0.75rem;
+}
+
+#monthDropdown {
+    font-size: 0.75rem;
+}
+
+#yearDropdown {
+    font-size: 0.75rem;
 }

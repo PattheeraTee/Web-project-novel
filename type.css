@@ -1,4 +1,3 @@
-
 .col .card img {
     object-position: top;
     object-fit: cover;
@@ -18,3 +17,32 @@ form lable {
     background-color: #F7F7F7 !important;
 }
 
+@media (max-width: 767px) {
+    form {
+        display: none;
+    }
+
+    .card-img-top {
+        min-height: 30vh;
+    }
+}
+
+@media (min-width: 767px) {
+    form {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    form {
+        display: inherit;
+    }
+
+    .bs {
+        display: none;
+    }
+}
+
+.bs, .bs ul li, button{
+    color: #737373;
+}

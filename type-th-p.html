@@ -13,12 +13,37 @@
 
 <body>
     <div class="container row m-auto">
-            <div class="col-12">
+        <div class="">
+            <div>
                 <div><span style="color: #737373;">หมวดหมู่ > ย้อนยุคไทย</span></div>
                 <h3 class="fw-bold py-4">ย้อนยุคไทย</h3>
             </div>
+            <div class="bs pb-2">
+                <div class="btn-group">
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        จัดเรียงตาม
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>ยอดนิยม</li>
+                        <li>อัปเดตล่าสุด</li>
+                    </ul>
+                </div>
 
-        <div class="col-8">
+                <div class="btn-group">
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        สถานะ
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>จบแล้ว</li>
+                        <li>ยังไม่จบ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-12 col-sm-12">
             <!-- content new -->
             <!-- row 1 -->
             <div class="row row-cols-1 row-cols-md-2 g-4 pb-4">
@@ -120,7 +145,7 @@
             </div>
         </div>
 
-        <div class="col-2 ps-4">
+        <div class="col-lg-2 ps-4">
             <form>
                 <label for="" class="fw-bold">จัดเรียงตาม : </label>
                 <!-- Radios  -->
