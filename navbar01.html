@@ -59,7 +59,7 @@ nav ul{
 }
 nav .level1 li{
     position: relative;
-    margin: 0rem 2rem;
+    margin: 0rem 0rem;
 }
 
 .nav-level1 li{
@@ -79,6 +79,7 @@ nav .level2{
     border: 1px solid #8d8484;
     width: max-content;
 }
+
 nav .nav-level2{
     position: absolute;
     
@@ -98,6 +99,11 @@ nav .level3{
     display: none;
     width: max-content;
 }
+.nav-sad .level3{
+    position: absolute;
+    left: -100%;
+    top: 0rem;
+}
 .level3-item,.level2-item{
     padding: 0.5rem 1rem;
 }
@@ -114,7 +120,7 @@ li.level2-item:hover,li.level3-item:hover{
     display: block;
 }
 .nav1,.nav2{
-    min-width:450px;
+   
     box-sizing: border-box;
 }
 .nav1 .navbar-brand{
@@ -125,84 +131,105 @@ li.level2-item:hover,li.level3-item:hover{
     min-width: 30px;
     flex-wrap: nowrap;
 }
-.nav1{
+@media (max-width: 576px) {
+            .nav2 .navbar-nav {
+                flex-direction: column;
+            }
 
-}
+            .nav2 .navbar-nav .nav-item {
+                width: 100%;
+                text-align: center;
+            }
 
+            .nav2 .navbar-nav .nav-link {
+                padding: 1rem 0;
+            }
+            
+        }
 </style>
   </head>
-  
-  <body>
-        <nav class="container-fluid d-flex nav1">
-            <a class="navbar-brand col" href="#">
-                <img src="./image/logo-novel.svg" alt="โลโก้นิยาย" width="100" height="60">
-            </a>
-            <div class="text-end pe-5">
-                <ul class="navbar-nav me-auto nav-level1 d-flex flex-row">
-                    <li class="nav-item">
-                        <a class="nav-top-icon" href="#">
-                            <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" width="50" height="30">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-top-icon" href="#">
-                            <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" width="50" height="30">
-                        </a>
-                        <ul class="nav-level2">
-                            <li><a href="#ddf">อ่านล่าสุด</a></li>
-                            <li><a href="#ddf">ติดตาม</a></li>
-                            <li><a href="#ddf">นิยาย</a></li>
-                            <li><a href="#ddf">บุ๊คมาร์ค</a></li>
-                            <li><a href="#ddf">คอมเมนต์</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-top-icon" href="#">
-                                <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" width="50" height="30">
-                            </a>
-                            <ul class="nav-level2">
-                                <li><a href="#">นิยายของฉัน</a></li>
-                                <li><a href="#kdsf">เขียนนิยาย</a></li>
-                                <li><a href="#kdsf">ยอดขาย</a></li>
 
-                            </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-top-icon" href="#">
-                            <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" width="50" height="30">
-                        </a>
-                        <ul class="nav-level3">
-                            <li><a href="#f">ข้อมูลผู้ใช้</a></li>
-                            <li><a href="#f">หน้าเพขของฉัน</a></li>
-                            <li><a href="#w">ชั้นหนังสือ</a></li>
-                            <li id="menu3">
-                                <a href="#o">เหรียญของฉัน</a>
-                                <ul class="nav-level3">
-                                    <li><a href="#ss">ประวัติการเติมเงิน</a></li>
-                                    <li><a href="#re">ประวัติการใช้</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#w">เติมเหรียญ</a></li>
-                            <li><a href="#w">ติดต่อเรา</a></li>
-                            <li><a href="#w">คู่มือผู้ใช้</a></li>
-                            <li><a href="#w">คำถามที่พบบ่อย</a></li>
-                        </ul>
-                    </li>
-            
-            </div>
-        </nav>
-    <nav class="navbar navbar-expand-md navbar-dark nav2 ">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
 
-            <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand navbar-dark nav-sad container-fluid">
+        <a class="navbar-brand ms-lg-5 ms-md-3 ms-sm-1" href="./index.html">
+            <img src="./image/logo-novel.svg" alt="โลโก้นิยาย" class="img-fluid ms-lg-5" width="100" height="60">
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-            <ul class="navbar-nav me-auto level1">
+            <ul class="navbar-nav ms-auto me-lg-5 pe-lg-5 me-md-5 pe-sm-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="./image/icons/search-icon.svg" alt="ค้นหา" class="img-fluid" width="30" height="30">
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="img-fluid" width="30" height="30">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item level2-item" href="">อ่านล่าสุด</a></li>
+                            <li><a class="dropdown-item level2-item" href="">ติดตาม</a></li>
+                            <li><a class="dropdown-item level2-item" href="">นิยาย</a></li>
+                            <li><a class="dropdown-item level2-item" href="">บุ๊คมาร์ค</a></li>
+                            <li><a class="dropdown-item level2-item" href="">คอมเมนต์</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="img-fluid" width="30" height="30">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item level2-item" href="">นิยายของฉัน</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item level2-item" href="">เขียนนิยาย</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item level2-item" href="">ยอดขาย</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="img-fluid" width="30" height="30">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item level2-item" href="">ข้อมูลผู้ใช้</a>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle level2-item" href="#">เหรียญของฉัน</a>
+                        <ul class="dropdown-menu level3">
+                            <li><a class="dropdown-item level3-item" href=".">ประวัติการเติมเงิน</a></li>
+                            <li><a class="dropdown-item level3-item" href="">ประวัติการใช้</a></li>
+                        </ul>
+                        <li><a class="dropdown-item level2-item" href="">หน้าเพจของฉัน</a></li>
+                        <li><a class="dropdown-item level2-item" href="">เติมเหรียญ</a></li>
+                        <li><a class="dropdown-item level2-item" href="">ติดต่อเรา</a></li>
+                        <li><a class="dropdown-item level2-item" href="">คู่มือผู้ใช้</a></li>
+                        <li><a class="dropdown-item level2-item" href="#">คำถามที่พบบ่อย</a></li>
+                    </li>
+                    <li><a class="dropdown-item level2-item" href="">ล็อกอินเข้าสู่ระบบ</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+      
+  
+    <nav class="navbar navbar-expand navbar-dark nav2 container-fluid ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav me-auto level1 mx-auto">
                 <li class="nav-item px-5">
                     <a class="nav-link text-light" href="./index.html">หน้าหลัก</a>
                 </li>
                 <li class="nav-item dropdown level1-item">
                     <a class="nav-link dropdown-toggle text-light px-5" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <!-- <img src="./image/icons/books-icon.svg" alt="" class="img-fluid" width="50" height="30"> -->
                  หมวดหมู่
                 </a>
                 <ul class="dropdown-menu level2" aria-labelledby="navbarDropdownMenuLink">
@@ -231,7 +258,7 @@ li.level2-item:hover,li.level3-item:hover{
                 </ul>
             </li>
             <li class="nav-item dropdown level1-item">
-                <a class="px-5 nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                <a class="px-5 nav-link text-light" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
                 จัดอันดับ
                 </a>
             </li>
@@ -242,6 +269,7 @@ li.level2-item:hover,li.level3-item:hover{
             </div>
         </div>
     </nav>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint praesentium obcaecati blanditiis vero iste illo, hic aspernatur necessitatibus soluta nam incidunt nobis autem provident temporibus esse, laborum asperiores libero perferendis. Quam provident, aliquid voluptatum voluptate, corporis eveniet, sed aspernatur nesciunt molestias hic porro quaerat ab corrupti consequuntur laboriosam necessitatibus consectetur vel amet veritatis quis incidunt nam? Laboriosam magni vitae ipsum dolorum delectus, cum, voluptates corporis fugiat unde reiciendis veritatis quidem dolores soluta distinctio rem iure a optio tempora nulla aperiam quae nemo quos sint laudantium! Consequatur error, harum nisi aspernatur reiciendis libero fuga vero molestias repellat, est atque amet eveniet suscipit reprehenderit at ratione quo. A labore corrupti doloribus nisi dolores quod. Explicabo distinctio, aut placeat atque totam quam suscipit reiciendis nostrum, ad quos facilis. Explicabo, impedit distinctio iste expedita, iusto, error reprehenderit obcaecati deserunt ad aspernatur assumenda beatae debitis corrupti temporibus placeat architecto perferendis. Quidem culpa officia natus, molestiae ea sequi hic, eius dolorum doloribus itaque id accusamus beatae maxime iusto sapiente quam exercitationem fugiat neque deserunt, sed similique deleniti praesentium nemo cupiditate? Quisquam eos consequatur porro, qui molestiae accusantium necessitatibus repellat nisi magnam perferendis, harum alias quo nobis exercitationem. In est aspernatur optio eos. Exercitationem eveniet dolores similique at fugit. Hic ipsum aliquid ad necessitatibus, at dignissimos corporis debitis officia voluptate? Iure repudiandae itaque quo ea fugit suscipit possimus laborum qui dolor velit numquam sunt odio, consequatur ab illo minima nesciunt voluptates eos earum saepe. Esse, alias magnam expedita hic fuga harum perspiciatis deserunt praesentium eveniet ipsam provident exercitationem corporis tempora tempore iste sint mollitia voluptate, est possimus quos accusantium ea libero minus nihil. Error eum incidunt quia velit a accusamus placeat rem dolorem veniam iure et esse facilis repudiandae minus assumenda recusandae, delectus totam. Voluptate, dolorem totam. Dolorum, eos veniam laborum incidunt ipsa vero quos libero fuga adipisci, laboriosam minima sunt eveniet praesentium. Illum, sit nihil! Tenetur mollitia obcaecati odit, impedit voluptatibus magnam quaerat quasi deserunt vero necessitatibus doloribus a nihil amet corporis, nemo quibusdam. Eos laborum beatae commodi veniam cum nulla. Dignissimos sequi sed quam at, velit doloribus labore eveniet perferendis quae culpa! Temporibus ipsa animi minus inventore error vero voluptate maiores. Laudantium, sit ex, reiciendis et quia, repellat esse veritatis nemo voluptates impedit enim. Alias quas praesentium neque sequi ex? Voluptate consequatur voluptates est odio incidunt deleniti. Neque, maxime fugiat! Eum officia nostrum totam, asperiores ipsam, ullam animi sapiente aliquam placeat ea at? Nemo nostrum accusamus distinctio eius inventore excepturi incidunt repellendus esse totam nesciunt aliquam, fugiat vitae possimus cupiditate ex odit consectetur omnis dolorum! Hic, corporis quis. Dignissimos laborum ipsa distinctio nisi suscipit, necessitatibus voluptates harum quae minus quos, in cum placeat excepturi tempora illum veritatis explicabo at. Nulla deserunt itaque sunt illo voluptate quaerat sit vel asperiores libero eos pariatur earum ab accusantium praesentium obcaecati, doloribus ex nemo odio tempora. Ullam iusto ipsam deserunt maiores eligendi exercitationem alias blanditiis suscipit rerum aperiam, natus quia placeat dolorum nisi aspernatur voluptatum veniam libero qui aliquam. Voluptas sapiente quos dolor nemo officiis magnam, quisquam, modi deleniti perspiciatis illo minus totam consectetur rem velit. Explicabo placeat dolorem laborum unde, ipsam eos accusamus voluptatibus debitis impedit modi aliquid illum non harum porro reiciendis voluptas numquam magnam esse in at praesentium dolorum error autem. Assumenda voluptas quod architecto blanditiis modi, soluta nisi, repellat voluptates quidem, dolores aspernatur quis. Cumque corrupti voluptas nulla similique, molestiae eveniet distinctio aperiam molestias qui ducimus nesciunt perferendis illum eum, itaque sit hic deleniti delectus? Earum repellat rerum odio id doloremque aspernatur porro ipsam necessitatibus nihil suscipit sed mollitia delectus sit saepe, animi, ratione ullam ea vitae placeat! Vel commodi debitis atque officia rerum id dolorum sequi veritatis laborum eveniet, fugiat autem. Ducimus porro cupiditate quisquam laboriosam doloremque, praesentium debitis voluptatem veniam quibusdam voluptate quia adipisci provident odit! Dicta laboriosam obcaecati ad sequi illo voluptatum dolor in quas recusandae adipisci porro distinctio soluta, nam, perferendis ullam tempora, totam sed rem quis rerum numquam ea! Mollitia commodi accusantium consectetur voluptate doloremque itaque, explicabo est officia! Sint reprehenderit velit praesentium, sit similique accusamus at eligendi suscipit nihil aut consectetur quibusdam debitis, illo illum consequuntur officia. Excepturi ex dolorum officiis libero. Explicabo quae praesentium amet provident quod dignissimos qui, distinctio porro officiis animi perferendis dolor exercitationem soluta repellendus dolore? Illo voluptas inventore aspernatur, alias qui minus assumenda, recusandae, omnis dignissimos aliquid quos quo possimus accusamus! Ducimus, nobis? Nostrum ut dolorem voluptatibus? Veniam minima architecto provident quod molestiae eos tempora odit sed expedita inventore, officiis asperiores dicta culpa corporis. Beatae veniam magnam commodi, provident illo odio recusandae, libero non, cum quae minus corrupti. Repellat consequuntur, iure impedit pariatur natus atque commodi dolores sint blanditiis, architecto necessitatibus laboriosam, vitae id ex corrupti voluptas repudiandae veniam! Sapiente neque odit quo tenetur error id illo alias eveniet perferendis non minima tempora voluptatibus, temporibus nostrum cum ratione. Mollitia dolorum, nihil, consectetur quidem aliquam repudiandae minima at tenetur iste dolorem asperiores laudantium quam totam minus libero amet deserunt nisi alias optio corporis ipsum. Eos quis at sapiente! Neque earum quis necessitatibus culpa accusamus laudantium praesentium aspernatur iusto incidunt doloribus fugit optio, aperiam hic qui blanditiis, in adipisci accusantium quae voluptates. Incidunt, totam quam obcaecati, soluta fuga eaque ipsa ullam aliquid corrupti reiciendis quibusdam cumque adipisci, iste nulla sint debitis optio vel similique delectus maiores! Enim eaque, quam nulla eum dolorem accusamus nostrum illo cupiditate, harum at asperiores. Fugiat culpa mollitia, impedit odit ex exercitationem libero magnam commodi? Ullam asperiores dolor a, omnis eaque officia nesciunt cumque, velit numquam dolorum placeat quidem laboriosam quibusdam adipisci non veritatis. Voluptatum molestias, quisquam alias perferendis perspiciatis animi et quam adipisci soluta accusamus, nobis iste magni minima porro sit rerum cum. Distinctio fugit, alias, magnam saepe culpa blanditiis optio suscipit facilis vero excepturi aliquam. Magni odio inventore consequatur quia doloremque, pariatur dignissimos veniam provident odit nisi laborum consequuntur voluptates velit mollitia. Omnis laudantium libero quaerat, suscipit, cumque quis quisquam incidunt rerum labore aut aperiam velit ab accusantium quae nemo? Omnis nam laborum dolor a. Sed doloribus itaque assumenda, et consequuntur, voluptatibus ullam ipsa molestiae dolor tempore tenetur cum!
     <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
