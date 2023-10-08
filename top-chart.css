@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 form {
     font-size: 0.75rem;
 }
@@ -12,4 +18,19 @@ select , option{
 
 #yearDropdown {
     font-size: 0.75rem;
+}
+
+p.card-text {
+    font-size: 0.9rem;
+}
+
+.top-1, .top-2, .top-3 {
+    position: relative;
+}
+
+.pin img{
+    z-index: 99;
+    position: absolute;
+    width: 20%;
+    right: 5%;
 }
