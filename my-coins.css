@@ -26,3 +26,26 @@
     margin: 0 5rem;
 }
 
+@media (max-width: 767px) {
+    .penname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .follow button.fb {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    #nav-tab button {
+        font-size: 0.5rem;
+        width: 100%;
+        padding: 1;
+    }
+}
+
+table {
+    font-size: 0.75rem;
+}
+
