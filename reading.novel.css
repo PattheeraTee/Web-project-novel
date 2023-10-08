@@ -1,0 +1,85 @@
+.read-novel-icon a img,.read-novel-icon a i,.read-novel-icon i{
+    width: 3rem;
+    height: auto;
+    color: #737373;
+}
+.read-novel-icon:active{
+    color: #03A9F4;
+}
+.read-novel-icon a{
+    text-decoration: none;
+    color: #424242;
+}
+.read-novel{
+    background-color: #f7f7f7;
+    box-shadow:0px 2px 4px 0px #737373;
+}
+.content1{
+    padding: 0rem 1rem 1rem;
+    border-bottom: 1px solid #737373;   
+    background-color: #f7f7f7;
+}
+.part{
+    color: #737373;
+}
+.content2{
+    min-width: 250px;
+}
+.content2 p{
+    text-indent: 4rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+.add-comment button{
+    background-color: #03A9F4;
+    color: white;
+}
+.earn-money button{
+    background-color: #01579B;
+}
+.earn-money button span{
+    color: white;
+}
+button {
+    color: #03A9F4 !important;
+    border-color: #03A9F4 !important;
+}
+button:hover {
+    color: #ffffff !important;
+    border-color: #03A9F4 !important;
+}
+.nav-next a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #737373;
+   
+}
+div.nav-next{
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+}
+div.nav-next-l{
+    border-right: 1px solid #424242;
+}
+a:hover {
+    color: #03A9F4 !important;
+}
+.comment-icons i,.comment-icons p{
+    color: #bebebe;
+}
+.comment-icons i:hover{
+    color: #03A9F4;
+}
+
+
+@media(max-width:576px){
+    .com2{
+        display: none;
+    }
+    *{
+        font-size: 1rem!important;
+    }
+    .content1{
+        min-width: 200px;
+    }
+}
