@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+    table {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 767px) {
+    form {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) {
+    form {
+        display: flex;
+    }
+}
