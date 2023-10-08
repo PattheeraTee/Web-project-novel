@@ -30,6 +30,10 @@
     line-height: 2.5rem;
     font-size: 1.5rem;
 }
+.add-comment button{
+    background-color: #03A9F4;
+    color: white;
+}
 .earn-money button{
     background-color: #01579B;
 }
@@ -66,6 +70,8 @@ a:hover {
 .comment-icons i:hover{
     color: #03A9F4;
 }
+
+
 @media(max-width:576px){
     .com2{
         display: none;
