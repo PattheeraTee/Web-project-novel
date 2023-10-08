@@ -1,7 +1,14 @@
-.user-p {
+.user-p{
     background-color: #F7F7F7 !important;
     border-radius: 1rem;
 } 
+
+.my-n {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #F7F7F7 !important;
+    border-radius: 1rem;
+}
 
 .addnovel-b {
     color: white;
@@ -11,3 +18,47 @@
     padding: 0.5rem;
 }
 
+.add-p {
+    color: #03A9F4;
+    border: 1px solid #03A9F4;
+    border-radius: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .prof {
+        display: none;
+    }
+
+    .user-p {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .addnovel-b {
+        display: inline;
+    }
+
+    .my-n {
+        text-align: center;
+    }
+}
+
+@media (min-width: 767px) {
+    .prof {
+        display: none;
+    }
+
+    .user-p {
+        text-align: center;
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .prof {
+        display: inherit;
+        max-height: 20vh;
+    }
+}
