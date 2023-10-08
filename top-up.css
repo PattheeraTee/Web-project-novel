@@ -1,0 +1,64 @@
+.follow button {
+    background-color: #03A9F4 !important;
+    border-color: #03A9F4 !important;
+}
+
+.follow button:hover {
+    color: #ffffff !important;
+    border-color: #01579B !important;
+    background-color: #01579B !important;
+}
+
+
+@media (max-width: 767px) {
+    .penname {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .follow button.fb {
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    #nav-tab button {
+        font-size: 0.5rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    .all-pay{
+        background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.pay div{
+    background-color: #f7f7f7;
+    margin: 1rem 1.5rem;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 2px 4px 0px #737373;
+}
+.pay img{
+    width: 50%;
+}
+.all-pay p,.all-pay span.pay div p,.detial-pay div span,.pay p{
+    font-size: 0.75rem;
+}
+@media(min-width:768px){
+    .all-pay{
+        background-color: #f7f7f7;
+       
+    }
+    .detail-pay{
+        border-left:2px solid #d9d9d9;
+    }
+    .all-pay p,.all-pay span.pay div p,.detial-pay div span,.pay p{
+        font-size: 1rem;
+    }
+}
+
