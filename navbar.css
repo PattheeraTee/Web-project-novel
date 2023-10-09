@@ -190,3 +190,144 @@ ul.level1{
     margin: 0rem;
     padding: 0rem;
 }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.dropdown-menu>.dropdown-submenu>a:active{
+    background-color: #e1f5fe !important;
+    color: #000000 !important;
+}
+.dropdown-menu>li>a.dropdown-item:active{
+    background-color: #e1f5fe !important;
+    color: #000000 !important;
+    
+}
+.dropdown-menu>li>a:hover::after:active{
+    color: #000000;
+    text-align: center;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu{
+    display: block;
+    
+}
+.dropdown-menu>li>a:hover{
+    color: #03A9F4;
+} 
+.dropdown-menu>li>a:hover::after{
+    transform: rotate(-90deg);
+    color: #03A9F4;
+} 
+.nav-bad .dropdown-menu>li>a:hover::after{
+    transform: rotate(270deg);
+    color: #03A9F4;
+} 
+.dropdown-menu>li>a:hover{
+    color: #03A9F4;
+} 
+.nav2{
+    background-color: #03a9f4;
+}
+nav a,nav i{
+    color: white;
+    text-decoration: none;
+}
+.nav1 a{
+    color: #03A9F4;
+}
+nav ul{
+    list-style-type: none;
+}
+nav .level1 li{
+    position: relative;
+    margin: 0rem 0rem;
+}
+
+.nav-level1 li{
+    position: relative;
+}
+.nav-level1 li a{
+    text-align: start;
+}
+nav .level2{
+    position: absolute;
+    background-color: #f7f7f7;
+    padding: 0rem;
+    left: 0rem;
+    top: 100%;
+    border-radius: 0.3rem;
+    display: none;
+    border: 1px solid #8d8484;
+    width: max-content;
+}
+
+nav .nav-level2{
+    position: absolute;
+    
+}
+nav .level2 a,nav .level2 i{
+    color: #8d8484;
+}
+
+nav .level3{
+    position: absolute;
+    background-color: #f7f7f7;
+    padding: 0rem;
+    left: 100%;
+    top: 0rem;
+    border-radius: 0.3rem;
+    border: 1px solid #8d8484;
+    display: none;
+    width: max-content;
+}
+.nav-sad .level3{
+    position: absolute;
+    left: -100%;
+    top: calc(25%);
+}
+.level3-item,.level2-item{
+    padding: 0.5rem 1rem;
+}
+.level1-item{
+    padding: 0rem 0rem;
+}
+
+li.level2-item:hover,li.level3-item:hover{
+    background-color: #e1f5fe;
+    border-radius: 0.3rem;
+}
+
+.level1-item:hover>.level2,.level2-item:hover>.level3{
+    display: block;
+}
+.nav1,.nav2{
+   
+    box-sizing: border-box;
+}
+.nav1 .navbar-brand{
+    margin: 0px;
+    padding: 0px;
+}
+.nav1 img,.nav2 img{
+    min-width: 30px;
+    flex-wrap: nowrap;
+}
+@media (max-width: 576px) {
+            .nav2 .navbar-nav {
+                flex-direction: column;
+            }
+
+            .nav2 .navbar-nav .nav-item {
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav2 .navbar-nav .nav-link {
+                padding: 1rem 0;
+            }
+            
+        }
