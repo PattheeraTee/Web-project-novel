@@ -104,3 +104,24 @@ p.time {
     font-size: 2rem;
     padding: 2rem 0;
 }
+
+.delete button{
+    background-color: #d9d9d9 !important;
+    color: #737373 !important;
+    border-color: #d9d9d9 !important;
+}
+.delete button:hover{
+    background-color: #737373 !important;
+    color: white !important;
+    border-color: #737373 !important;
+}
+a:hover {
+    color: #03A9F4 !important;
+}
+
+.comment-icons i:hover{
+    color: #03A9F4;
+}
+.comment-icons i,.comment-icons p{
+    color: #bebebe;
+}

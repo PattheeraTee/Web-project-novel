@@ -34,3 +34,8 @@ p.card-text {
     width: 20%;
     right: 5%;
 }
+
+.top-chart-nav a{
+    color: #FFD54F !important;
+    font-weight: bold;
+}

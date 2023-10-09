@@ -316,6 +316,10 @@ li.level2-item:hover,li.level3-item:hover{
     min-width: 30px;
     flex-wrap: nowrap;
 }
+.home-nav a{
+    color: #FFD54F !important;
+    font-weight: bold;
+}
 @media (max-width: 576px) {
             .nav2 .navbar-nav {
                 flex-direction: column;

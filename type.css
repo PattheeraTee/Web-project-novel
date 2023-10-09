@@ -46,3 +46,8 @@ form lable {
 .bs, .bs ul li, button{
     color: #737373;
 }
+
+.top-chart a{
+    color: #FFD54F !important;
+    font-weight: bold;
+}

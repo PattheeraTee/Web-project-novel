@@ -58,3 +58,7 @@
         height: 15vh !important;
     }
 }
+.event-nav a{
+    color: #FFD54F !important;
+    font-weight: bold;
+}
