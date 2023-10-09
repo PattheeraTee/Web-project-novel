@@ -1,0 +1,33 @@
+.follow button {
+    background-color: #03A9F4 !important;
+    border-color: #03A9F4 !important;
+}
+
+.follow button:hover {
+    color: #ffffff !important;
+    border-color: #01579B !important;
+    background-color: #01579B !important;
+}
+
+.nav-underline .nav-link.active{
+    color: #03A9F4;
+}
+
+/* .nav-link {
+    color: black ;
+} */
+
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    font-weight: 700;
+    color: #0dcaf0;
+    border-bottom-color: currentcolor;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav button {
+    margin: 0 5rem;
+}
