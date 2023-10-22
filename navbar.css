@@ -318,7 +318,17 @@ li.level2-item:hover,li.level3-item:hover{
     min-width: 30px;
     flex-wrap: nowrap;
 }
-
+.btn-primary{
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+.btn-primary:hover{
+    background-color: #01579B;
+}
+html{
+    min-width: 300px;
+    max-width: 1440px;
+}
 @media (max-width: 576px) {
             .nav2 .navbar-nav {
                 flex-direction: column;
