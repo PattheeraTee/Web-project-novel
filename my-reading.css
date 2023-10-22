@@ -111,7 +111,7 @@ p.time {
     color: white !important;
     border-color: #737373 !important;
 }
-a:hover {
+.nav-underline a:hover {
     color: #03A9F4 !important;
 }
 

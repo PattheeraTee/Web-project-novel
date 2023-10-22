@@ -328,6 +328,10 @@ li.level2-item:hover,li.level3-item:hover{
 html{
     min-width: 300px;
 }
+.home-nav:hover a,.event-nav:hover a,a.type-nav:hover,.top-chart-nav:hover a{
+    color: #01579B !important;
+}
+
 @media (max-width: 576px) {
             .nav2 .navbar-nav {
                 flex-direction: column;
