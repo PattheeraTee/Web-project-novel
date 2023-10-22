@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมุลผู้ใช้</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./font.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <h3 class="pb-3 tw-bold mt-5">ข้อมูลส่วนตัว</h3>
+        <div class="user-pictue d-flex just justify-content-between align-items-end">
+            <img src="./image/taeyeon.png" alt="taeyeon" class="img-fluid rounded-circle" width="200" height="200">
+            <div>
+                <input type="file" id="file" style="display:none;" />
+                <button id="button" name="button" value="Upload" onclick="thisFileUpload();" class="btn btn-primary">เปลี่ยนรูปโปรไฟล์</button>
+            </div>
+        </div>
+        <form action="#" class="mt-5">
+            <div class="mb-3 row">
+                <label for="staticusername" class="col-sm-2 col-form-label">ชื่อผู้ใช้ : </label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticusername" value="miw_w">
+                </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputfakename" class="col-sm-2 col-form-label">นามปากกา : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputfakename" value="sleepdog">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">อีเมล <span class="text-danger">*</span> : </label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="pattheera.t@kkumail.com">
+                </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">รหัสผ่าน <span class="text-danger">*</span> : </label>
+                     <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" value="webdesign">
+                    </div>
+                </div>
+                
+                <div class="mb-3 row">
+                    <label for="inputfirstname" class="col-sm-2 col-form-label">ชื่อ : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputfirstname" value="พัทธ์">
+                    </div>
+                </div> 
+                <div class="mb-3 row">
+                    <label for="inputlastname" class="col-sm-2 col-form-label">นามสกุล : </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputlastname" value="ธี">
+                    </div>
+                </div> 
+                <div class="mb-3 row">
+                    <label for="inputfirstname" class="col-sm-2 col-form-label">เพศ : </label>
+                    <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected hidden>ไม่ระบุ</option>
+                            <option value="male">ชาย</option>
+                            <option value="female">หญิง</option>
+                            <option value="lgbtq">lgbtq+</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="py-4 d-flex justify-content-center gap-4 ">
+                    <button type="reset" class="btn btn-outline-secondary">ยกเลิก</button>
+                    <button class="btn btn-primary" type="submit">บันทึก</button>
+                </div>
+        </form>
+        <h4>เชื่อมต่อบัญชี</h4>
+        <div class="d-flex flex-row align-items-center ">
+            <img src="./image/icons/20.svg" alt="facebook logo" class="img-fluid" width="60">
+            <p class="m-0 p-0">Facebook</p>
+            <p class="m-0 p-0">ไม่ได้เชื่อมต่อ</p>
+            <i class="bi bi-link-45deg"></i><a href="https://www.facebook.com" target="_blank">เชื่อมต่อ Facebook</a>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="./navbar.js"></script>
+    <script src='./footer.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+            function thisFileUpload() {
+            document.getElementById("file").click();
+            };
+    </script>
+</body>
+</html>
