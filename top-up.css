@@ -1,9 +1,10 @@
-.follow button {
+.top-up a {
+    color: white !important;
     background-color: #03A9F4 !important;
     border-color: #03A9F4 !important;
 }
 
-.follow button:hover {
+.top-up a:hover {
     color: #ffffff !important;
     border-color: #01579B !important;
     background-color: #01579B !important;
@@ -17,7 +18,7 @@
         justify-content: center;
     }
 
-    .follow button.fb {
+    .top-up  a.fb {
         margin-top: 1.5rem;
         width: 100%;
     }

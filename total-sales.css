@@ -1,3 +1,8 @@
+tfoot tr th,
+tfoot tr td {
+    background-color: #D9D9D9 !important;
+}
+
 @media (max-width: 767px) {
     table {
         font-size: 0.5rem;
