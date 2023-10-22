@@ -27,3 +27,12 @@
     display: flex;
     justify-content: center;
 }
+
+.btn-outline-primary{
+    color: #03A9F4 !important;
+    border-color: #03A9F4 !important;
+}
+.btn-outline-primary:hover{
+    background-color: #03A9F4 !important;
+    color: white !important;
+}
