@@ -10,6 +10,10 @@
     background-color: #01579B !important;
 }
 
+.penname,
+.all-pay {
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #888888;
+}
 
 @media (max-width: 767px) {
     .penname {
@@ -18,7 +22,7 @@
         justify-content: center;
     }
 
-    .top-up  a.fb {
+    .top-up a.fb {
         margin-top: 1.5rem;
         width: 100%;
     }
@@ -28,13 +32,15 @@
         width: 100%;
         padding: 1rem;
     }
-    .all-pay{
+
+    .all-pay {
         background-color: #f7f7f7;
         display: flex;
         flex-direction: column;
     }
 }
-.pay div{
+
+.pay div {
     background-color: #f7f7f7;
     margin: 1rem 1.5rem;
     padding: 3rem 1rem;
@@ -42,24 +48,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow:0px 2px 4px 0px #737373;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #888888;
 }
-.pay img{
+
+.pay img {
     width: 50%;
 }
-.all-pay p,.all-pay span.pay div p,.detial-pay div span,.pay p{
+
+.all-pay p,
+.all-pay span.pay div p,
+.detial-pay div span,
+.pay p {
     font-size: 0.75rem;
 }
-@media(min-width:768px){
-    .all-pay{
+
+@media(min-width:768px) {
+    .all-pay {
         background-color: #f7f7f7;
-       
+
     }
-    .detail-pay{
-        border-left:2px solid #d9d9d9;
+
+    .detail-pay {
+        border-left: 2px solid #d9d9d9;
     }
-    .all-pay p,.all-pay span.pay div p,.detial-pay div span,.pay p{
+
+    .all-pay p,
+    .all-pay span.pay div p,
+    .detial-pay div span,
+    .pay p {
         font-size: 1rem;
     }
 }
-
