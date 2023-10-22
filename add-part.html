@@ -21,11 +21,11 @@
     <div class="container">
         <h3 class="fw-bold py-3">เพิ่มตอนใหม่ (ตอนที่ 1) </h3>
         <form>
-            <div class="text-center mb-3">
-                <input type="file" id="file" style="display:none;" />
-                <button id="button" name="button" value="Upload" onclick="thisFileUpload();" class="btn btn-primary border-0" style="background-color: #e7e7e7;">
+            <div class="d-flex justify-content-center mb-3">
+                <input type="file" id="file" class="d-none"/>
+                <button id="button" name="button" value="Upload" onclick="thisFileUpload();" class="btn btn-primary border-0 d-flex flex-column align-items-center" style="background-color: #e7e7e7; color: #737373;">
                     <img src="./image/logo-novel.svg" alt="photo"  class="img-fluid my-3" width="200">
-                    <p style="color: #737373;">อัพโหลดรูปภาพ</p>
+                    อัพโหลดรูปภาพ
                 </button>
             </div>
             <div class="mb-3">
@@ -56,14 +56,14 @@
         <form>
             <label for="flexRadioDefault1" class="form-check-label fw-bold py-2 pt-3">กำหนดเหรียญ : </label>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
                     ฟรี
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                <label class="form-check-label" for="flexRadioDefault4">
                     ตั้งราคาเหรียญ
                 </label>
             </div>
