@@ -17,6 +17,6 @@ a,
 label,
 input,
 select,
-button {
+button,::placeholder {
     font-family: 'Sarabun', sans-serif !important;
 }
