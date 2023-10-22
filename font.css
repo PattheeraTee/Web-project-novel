@@ -13,6 +13,10 @@ h6 {
 
 p,
 span,
-a {
-    font-family: 'Sarabun', sans-serif;
+a,
+label,
+input,
+select,
+button {
+    font-family: 'Sarabun', sans-serif !important;
 }
