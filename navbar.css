@@ -327,7 +327,6 @@ li.level2-item:hover,li.level3-item:hover{
 }
 html{
     min-width: 300px;
-    max-width: 1440px;
 }
 @media (max-width: 576px) {
             .nav2 .navbar-nav {
