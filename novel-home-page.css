@@ -4,3 +4,111 @@ span.episodes {
     padding: 0.25rem 0.75rem;
     border-radius: 1em;
 }
+
+.intro {
+    background-color: #424242;
+}
+
+.row1,
+h2,
+.row3,
+p,
+.row4,
+.row5 {
+    padding: 0.5rem 0;
+}
+
+.novel-img img {
+    object-position: top;
+}
+
+.this-article h5:hover,
+td.read-ep:hover,
+span.read-ep:hover {
+    color: #03A9F4;
+}
+
+.hashtags {
+    color: #737373;
+    border: 1px solid #737373;
+    border-radius: 2em;
+    padding: 0.25em 0.5em;
+}
+
+/* shadow */
+.box-content {
+    background-color: #f7f7f7;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem #888888;
+}
+
+.table>:not(caption)>*>* {
+    background-color: #f7f7f7 !important;
+}
+
+.buy-ep {
+    background-color: #FFD54F;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.table-1 {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .novel-name {
+        display: none;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .novel-img {
+        height: 40vh;
+    }
+
+    .table-1 {
+        display: none;
+    }
+
+    .table-2 {
+        display: inherit;
+    }
+}
+
+@media (min-width: 768px) {
+    .novel-img {
+        height: 50vh;
+    }
+
+    .publish {
+        border-left: 1px solid #8D8484;
+    }
+
+    .table-2 {
+        display: none;
+    }
+
+    .table-1 {
+        display: inherit;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .novel-img {
+        height: 40vh;
+    }
+
+    .publish {
+        border-left: 1px solid #8D8484;
+    }
+
+    .table-2 {
+        display: none;
+    }
+
+    .table-1 {
+        display: inherit;
+    }
+}
