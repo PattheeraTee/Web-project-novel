@@ -1,352 +1,916 @@
-<!DOCTYPE html>
-<html lang="th">
-
-<head>
+<html lang="th"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>นิยายจัดอันดับ</title>
     <link rel="stylesheet" href="top-chart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="./index.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="./footer.css">
         <link rel="stylesheet" href="./font.css">
         <!-- google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sarabun&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&amp;family=Sarabun&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="navbar"></div>
-    <div class="container-fluid m-0 p-0">
-        <div class="row m-auto my-4 container">
-            <div class="d-flex align-items-center justify-content-between flex-nowrap">
-                <div>
-                    <h3 class="fw-bold">นิยายจัดอันดับ</h3>
-                    <p>อัปเดตประจำวันที่ 1 ตุลาคม 2566</p>
-                </div>
-                <form class="d-flex">
-                    <div class="">
-                        <label class=" mb-2" for="">หมวดหมู่ : </label>
-                        <select class="form-select" id="monthDropdown" aria-label="Default select example"
-                            style="width: 8rem; height: 2rem;">
-                            <option selected>ทั้งหมด</option>
-                            <option value="1">โรแมนซ์</option>
-                            <option value="2">ย้อนยุคไทย</option>
-                            <option value="3">ย้อนยุคจีน</option>
-                            <option value="4">แฟนตาซี</option>
-                            <option value="5">สืบสวน</option>
-                            <option value="6">ลึกลับ / สยองขวัญ</option>
-                            <option value="7">แอกชัน</option>
-                            <option value="8">ดราม่า</option>
-                            <option value="9">นิยายชายรักชาย</option>
-                            <option value="10">นิยายหญิงรักหญิง</option>
-                            <option value="11">ตลก </option>
-                        </select>
-                    </div>
-                    <div class="">
-                        <label class="ms-4 mb-2" for="">จัดเรียงตาม : </label>
-                        <select class="form-select ms-4" id="yearDropdown" aria-label="Default select example"
-                            style="width: 8rem; height: 2rem;">
-                            <option selected>ยอดนิยม</option>
-                            <option value="66">ยอดนิยม</option>
-                            <option value="65">รายวัน</option>
-                            <option value="64">รายเดือน</option>
-                            <option value="63">รายสัปดาห์</option>
-                        </select>
-                </form>
-            </div>
+    <div id="navbar"><!-- <div class="container-fluid p-0">
+    <nav>
+        <div class="nav-container-top">
+            <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon">
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="nav-container-bottom">
+            <ul class="nav-level1">
+                <li class="nav-home nav-item">
+                    <a href="#">หน้าหลัก</a>
+                </li>
+                <li class="nav-type nav-item">
+                    <a href="#">หมวดหมู่</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="nav-level2">
+                        <li class="nav-item-level2">
+                            <a href="">โรแมนซ์</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ย้อนยุค</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">ย้อนยุคไทย</a>
+                                </li>
+                                <li class="nav-item-level3" >
+                                    <a href="">ย้อนยุคจีน</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">แฟนตาซี</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">สืบสวน</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ลึกลับ/สยองขวัญ</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">แอ็กชัน</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ดราม่า</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">นิยาย Y</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">นิยายชายรักชาย</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">นิยายหญิงรักหญิง</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="">ตลก</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-top-chart nav-item">
+                    <a href="#">จัดอันดับ</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="nav-level2">
+                        <li class="nav-item-level2">
+                            <a href="" class="">อันดับทั้งหมด</a>
+                        </li>
+                        <li class="nav-item-level2">
+                            <a href="" class="">อันดับตามประเภท</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="nav-level3">
+                                <li class="nav-item-level3">
+                                    <a href="">โรแมนซ์</a>
+                                </li>
+                                <li class="nav-item-level3" class="nav-item-level3">
+                                    <a href="">ย้อนยุค</a>
+                                </li>
+                                <li>
+                                    <a href="">แฟนตาซี</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">สืบสวน</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ลึกลับ/สยองขวัญ</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">แอ็กชัน</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ดราม่า</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">นิยาย Y</a>
+                                </li>
+                                <li class="nav-item-level3">
+                                    <a href="">ตลก</a>
+                                </li class="nav-item-level3">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-activity nav-item">
+                    <a href="#">กิจกรรม</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div> -->
+<!-- <div class="container-fluid p-0 m-0" style="background-color:#03a9f4;">
+    <nav>
+        <div class="container-fluid d-flex justify-content-between py-1 px-5" style="background-color: white;">
+            <a href="./index.html"><img src="./image/logo-novel.svg" alt="รูปโลโก้" class="logo-image"></a>
+            <ul class="d-flex gap-3 mt-3">
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/search-icon.svg" alt="ปุ่มค้นหา" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/bell-icon.svg" alt="ปุ่มแจ้งเตือน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="nav-top-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="nav-top-icon">
+                    </a>
+                </li>
+            </ul> 
+        </div>
+        <div class="container nav-bottom" style="background-color: #03a9f4;">
+            <ul class="row level1">
+                <li class=" col-md-3 col-lg-3 level1-item text-center" id="menu1">
+                    <a href="#">หน้าหลัก</a>
+                </li>
+                <li class=" col-md-3 col-lg-3 level1-item text-center" id="menu2">
+                    <a href="#">หมวดหมู่</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="level2 text-start">
+                        <li class="level2-item">
+                            <a href="">โรแมนซ์</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ย้อนยุค</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">ย้อนยุคไทย</a>
+                                </li>
+                                <li class="level3-item" >
+                                    <a href="">ย้อนยุคจีน</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">แฟนตาซี</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">สืบสวน</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ลึกลับ/สยองขวัญ</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">แอ็กชัน</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ดราม่า</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">นิยาย Y</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">นิยายชายรักชาย</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">นิยายหญิงรักหญิง</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="level2-item">
+                            <a href="">ตลก</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" col-md-3 col-lg-3  level1-item text-center" id="menu3">
+                    <a href="#">จัดอันดับ</a>
+                    <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+                    <ul class="level2 text-start">
+                        <li class="level2-item">
+                            <a href="" class="">อันดับทั้งหมด</a>
+                        </li>
+                        <li class="level2-item">
+                            <a href="" class="">อันดับตามประเภท</a>
+                            <i class="bi bi-caret-right-fill arrow-right"></i>
+                            <ul class="level3">
+                                <li class="level3-item">
+                                    <a href="">โรแมนซ์</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ย้อนยุค</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">แฟนตาซี</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">สืบสวน</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ลึกลับ/สยองขวัญ</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">แอ็กชัน</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ดราม่า</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">นิยาย Y</a>
+                                </li>
+                                <li class="level3-item">
+                                    <a href="">ตลก</a>
+                                </li class="level3-item">
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="col-sm-2 col-md-3 col-lg-3 level1-item text-center" id="menu4">
+                    <a href="#">กิจกรรม</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+
+<!-- <ul class="nav-level1">
+    <li class="nav-home nav-item">
+        <a href="#">หน้าหลัก</a>
+    </li>
+    <li class="nav-type nav-item">
+        <a href="#">หมวดหมู่</a>
+        <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+        <ul class="nav-level2">
+            <li class="nav-item-level2">
+                <a href="">โรแมนซ์</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ย้อนยุค</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
+                        <a href="">ย้อนยุคไทย</a>
+                    </li>
+                    <li class="nav-item-level3" >
+                        <a href="">ย้อนยุคจีน</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">แฟนตาซี</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">สืบสวน</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ลึกลับ/สยองขวัญ</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">แอ็กชัน</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ดราม่า</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">นิยาย Y</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
+                        <a href="">นิยายชายรักชาย</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">นิยายหญิงรักหญิง</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item-level2">
+                <a href="">ตลก</a>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-top-chart nav-item">
+        <a href="#">จัดอันดับ</a>
+        <i class="arrow-down bi bi-caret-down-fill ms-1"></i>
+        <ul class="nav-level2">
+            <li class="nav-item-level2">
+                <a href="" class="">อันดับทั้งหมด</a>
+            </li>
+            <li class="nav-item-level2">
+                <a href="" class="">อันดับตามประเภท</a>
+                <i class="bi bi-caret-right-fill arrow-right"></i>
+                <ul class="nav-level3">
+                    <li class="nav-item-level3">
+                        <a href="">โรแมนซ์</a>
+                    </li>
+                    <li class="nav-item-level3" class="nav-item-level3">
+                        <a href="">ย้อนยุค</a>
+                    </li>
+                    <li>
+                        <a href="">แฟนตาซี</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">สืบสวน</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">ลึกลับ/สยองขวัญ</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">แอ็กชัน</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">ดราม่า</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">นิยาย Y</a>
+                    </li>
+                    <li class="nav-item-level3">
+                        <a href="">ตลก</a>
+                    </li class="nav-item-level3">
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="nav-activity nav-item">
+        <a href="#">กิจกรรม</a>
+    </li>
+</ul> -->
+<nav class="navbar navbar-expand navbar-dark nav-sad container-fluid bg-light sticky-top">
+    <a class="navbar-brand ms-lg-5 ms-md-3 ms-sm-1" href="./index.html">
+        <img src="./image/logo-novel.svg" alt="โลโก้นิยาย" class="img-fluid ms-lg-5" width="100" height="60">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+        <ul class="navbar-nav ms-auto me-lg-5 pe-lg-5 me-md-5 pe-sm-5">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="./image/icons/user-icon.svg" alt="โปรไฟล์" class="img-fluid" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item level2-item" href="#">ข้อมูลผู้ใช้</a>
+                    </li>
+                    <li><a class="dropdown-item level2-item" href="./user-page.html">หน้าเพจของฉัน</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle level2-item" href="./my-coins.html">เหรียญของฉัน</a>
+                    <ul class="dropdown-menu level3">
+                        <li><a class="dropdown-item level3-item" href="./my-coins.html">ประวัติการเติมเงิน</a></li>
+                        <li><a class="dropdown-item level3-item" href="./my-coins.html">ประวัติการใช้</a></li>
+                    </ul>
+                    </li><li><a class="dropdown-item level2-item" href="./top-up.html">เติมเหรียญ</a></li>
+                    <li><a class="dropdown-item level2-item" href="./contact.html">ติดต่อเรา</a></li>
+                    <li><a class="dropdown-item level2-item" href="#">คู่มือผู้ใช้</a></li>
+                    <li><a class="dropdown-item level2-item" href="./q-and-a.html">คำถามที่พบบ่อย</a></li>
+                
+                <li><a class="dropdown-item level2-item" href="./login.html">เข้าสู่ระบบ</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="./my-reading.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="./image/icons/books-icon.svg" alt="ชั้นหนังสือ" class="img-fluid" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item level2-item" href="./my-reading.html">อ่านล่าสุด</a></li>
+                        <li><a class="dropdown-item level2-item" href="./my-reading.html">ติดตาม</a></li>
+                        <li><a class="dropdown-item level2-item" href="./my-reading.html">นิยาย</a></li>
+                        <li><a class="dropdown-item level2-item" href="./my-reading.html">บุ๊คมาร์ค</a></li>
+                        <li><a class="dropdown-item level2-item" href="./my-reading.html">คอมเมนต์</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="./image/icons/pencil-icon.svg" alt="สำหรับนักเขียน" class="img-fluid" width="30" height="30">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li>
+                        <a class="dropdown-item level2-item" href="./mynovel.html">นิยายของฉัน</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item level2-item" href="./writing.html">เขียนนิยาย</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item level2-item" href="./total-sales.html">ยอดขาย</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="./search.html">
+                    <img src="./image/icons/search-icon.svg" alt="ค้นหา" class="img-fluid" width="30" height="30">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+  
+
+<nav class="navbar navbar-expand navbar-dark nav2 container-fluid sticky">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav me-auto level1 mx-auto">
+            <li class="nav-item px-5 home-nav">
+                <a class="nav-link text-light " href="./index.html">หน้าหลัก</a>
+            </li>
+            <li class="nav-item dropdown level1-item">
+                <a class="nav-link dropdown-toggle text-light px-5 type-nav" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                    <!-- <img src="./image/icons/books-icon.svg" alt="" class="img-fluid" width="50" height="30"> -->
+             หมวดหมู่
+            </a>
+            <ul class="dropdown-menu level2" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                    <a class="dropdown-item level2-item" href="./type-roman.html">โรแมนซ์</a>
+                </li>
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle level2-item" href="#">ย้อนยุค</a>
+                <ul class="dropdown-menu level3">
+                    <li><a class="dropdown-item level3-item" href="./type-th-p.html">ย้อนยุคไทย</a></li>
+                    <li><a class="dropdown-item level3-item" href="./type-chi-p.html">ย้อนยุคจีน</a></li>
+                </ul>
+                </li><li><a class="dropdown-item level2-item" href="./type-fan.html">แฟนตาซี</a></li>
+                <li><a class="dropdown-item level2-item" href="./type-inves.html">สืบสวน</a></li>
+                <li><a class="dropdown-item level2-item" href="./type-hor.html">ลึกลับ/สยองขวัญ</a></li>
+                <li><a class="dropdown-item level2-item" href="./type-ac.html">แอกชัน</a></li>
+                <li><a class="dropdown-item level2-item" href="./type-dra.html">ดราม่า</a></li>
+                <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle level2-item" href="#">นิยาย Y</a>
+                <ul class="dropdown-menu level3">
+                <li><a class="dropdown-item level3-item" href="./type-ya.html">นิยายชายรักชาย</a></li>
+                <li><a class="dropdown-item level3-item" href="./type-yu.html">นิยายหญิงรักหญิง</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-item level2-item" href="./type-fun.html">ตลก</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown level1-item">
+            <a class="px-5 nav-link text-light top-chart-nav" href="./top-chart.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+            จัดอันดับ
+            </a>
+        </li>
+        <li class="nav-item level1-item">
+            <a href="./event.html" class="nav-link text-light px-5 event-nav">กิจกรรม</a>
+        </li>
+        </ul>
         </div>
     
-        <!-- contect -->
-    
-        <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="top-1 col">
-                    <div class="pin div">
-                        <img src="image/top-icon/top-1.svg" alt="top 1">
-                    </div>
-                    <div class="card h-100">
-                        <img src="image/novel/p4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-5 fw-bold">หนึ่งความคิดนิจนิรันดร์</h2>
-                            <p class="card-text" style="color: #737373;">แอกชัน</p>
-                            <p style="color: #737373;">เอ่อร์เกิน</p>
-                            <div class="">
-                                <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">183</span>
-                                <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">2M</span>
-                                <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">6.4K</span>
-                                <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">32K</span>
-                            </div>
-                        </div>
-                    </div>
+</nav></div>
+    <div class="row container m-auto my-4">
+        <div class="d-flex align-items-center justify-content-between flex-nowrap">
+            <div>
+                <h3 class="fw-bold">นิยายจัดอันดับ</h3>
+                <p>อัปเดตประจำวันที่ 1 ตุลาคม 2566</p>
+            </div>
+            <form class="d-flex">
+                <div class="">
+                    <label class=" mb-2" for="">หมวดหมู่ : </label>
+                    <select class="form-select" id="monthDropdown" aria-label="Default select example" style="width: 8rem; height: 2rem;">
+                        <option selected="">ทั้งหมด</option>
+                        <option value="1">โรแมนซ์</option>
+                        <option value="2">ย้อนยุคไทย</option>
+                        <option value="3">ย้อนยุคจีน</option>
+                        <option value="4">แฟนตาซี</option>
+                        <option value="5">สืบสวน</option>
+                        <option value="6">ลึกลับ / สยองขวัญ</option>
+                        <option value="7">แอกชัน</option>
+                        <option value="8">ดราม่า</option>
+                        <option value="9">นิยายชายรักชาย</option>
+                        <option value="10">นิยายหญิงรักหญิง</option>
+                        <option value="11">ตลก </option>
+                    </select>
                 </div>
-                <div class="top-2 col">
-                    <div class="pin div">
-                        <img src="image/top-icon/top-2.svg" alt="top 1">
-                    </div>
-                    <div class="card h-100">
-                        <img src="image/novel/p14.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-5 fw-bold">ข้าเป็นบุรุษ(จริงๆ)นะ</h2>
-                            <p class="card-text" style="color: #737373;">ชายรักชาย</p>
-                            <p style="color: #737373;">วิหคสีรุ้ง</p>
-                            <div class="">
-                                <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">77</span>
-                                <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">111.5K</span>
-                                <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">831</span>
-                                <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">6.8K</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="">
+                    <label class="ms-4 mb-2" for="">จัดเรียงตาม : </label>
+                    <select class="form-select ms-4" id="yearDropdown" aria-label="Default select example" style="width: 8rem; height: 2rem;">
+                        <option selected="">ยอดนิยม</option>
+                        <option value="66">ยอดนิยม</option>
+                        <option value="65">รายวัน</option>
+                        <option value="64">รายเดือน</option>
+                        <option value="63">รายสัปดาห์</option>
+                    </select>
+            
+        </div></form>
+    </div>
+
+    <!-- contect -->
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="top-1 col">
+                <div class="pin div">
+                    <img src="image/top-icon/top-1.svg" alt="top 1">
                 </div>
-                <div class="top-3 col">
-                    <div class="pin div">
-                        <img src="image/top-icon/top-3.svg" alt="top 1">
-                    </div>
-                    <div class="card h-100">
-                        <img src="image/novel/p3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2 class="card-title fs-5 fw-bold">เกรียนแบบนี้ ก็ศิษย์พี่ใหญ่นี่แหละ</h2>
-                            <p class="card-text" style="color: #737373;">ชายรักชาย</p>
-                            <p style="color: #737373;">Aradeer</p>
-                            <div class="">
-                                <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">1,155</span>
-                                <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">95.3K</span>
-                                <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">174</span>
-                                <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                    style="color: #737373;">1.8K</span>
-                            </div>
+                <div class="card h-100">
+                    <img src="image/novel/p4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title fs-5 fw-bold">หนึ่งความคิดนิจนิรันดร์</h2>
+                        <p class="card-text" style="color: #737373;">แอกชัน</p>
+                        <p style="color: #737373;">เอ่อร์เกิน</p>
+                        <div class="">
+                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">183</span>
+                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">2M</span>
+                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">6.4K</span>
+                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">32K</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <!-- 4 - 11 -->
-        <div class="container mt-4">
-            <div class="row d-flex align-items-center">
-                <!-- 4 -->
-                <div class="py-2 d-flex align-items-center
-                 col-lg-2 col-sm-4"><span class="fw-bold fs-1">4</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p12.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">โอม ตอนที่ 1 แรงอาฆาต</h2>
-                        <p class="card-text" style="color: #737373;">สืบสวน</p>
-                        <p style="color: #737373;">Aradeer</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">122</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">46.1K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">48</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">80K</span>
-                        </div>
-                    </div>
+            <div class="top-2 col">
+                <div class="pin div">
+                    <img src="image/top-icon/top-2.svg" alt="top 1">
                 </div>
-    
-                <!-- 5 -->
-                <div class="py-2 d-flex align-items-center
-                col-lg-2 col-sm-4"><span class="fw-bold fs-1">5</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p8.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card h-100">
+                    <img src="image/novel/p14.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">Inside</h2>
-                        <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
-                        <p style="color: #737373;">เบ๊อะบ๊ะ</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">31</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">40.6K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">282</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">1K</span>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="row d-flex align-items-center container">
-                <!-- 6 -->
-                <div class="py-2 d-flex align-items-center
-                 col-lg-2 col-sm-4"><span class="fw-bold fs-1">6</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p7.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">อลินตา... หมอผีข้ามภพ</h2>
-                        <p class="card-text" style="color: #737373;"> ลึกลับ / สยองขวัญ</p>
-                        <p style="color: #737373;">ถุงแป้งหอม</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">355</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">36.2K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">1.3K</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">452</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- 7 -->
-                <div class="py-2 d-flex align-items-center
-                col-lg-2 col-sm-4"><span class="fw-bold fs-1">7</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p9.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">จนกว่าวันที่เจ้าจะเป็นของเรา</h2>
-                        <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
-                        <p style="color: #737373;">เบ๊อะบ๊ะ</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">31</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">29K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">338</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">456</span>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
-            <div class="row d-flex align-items-center container">
-                <!-- 8 -->
-                <div class="py-2 d-flex align-items-center
-                 col-lg-2 col-sm-4"><span class="fw-bold fs-1">8</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p10.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
-                        <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
-                        <p style="color: #737373;">LONE-LY-LYNN</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">21</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">16K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">55</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">32</span>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- 9 -->
-                <div class="py-2 d-flex align-items-center
-                col-lg-2 col-sm-4"><span class="fw-bold fs-1">9</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p15.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-4">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">กลยุทธ์การเอาตัวรอดของตัวเบี้ยผู้กลับมาเกิดใหม่</h2>
+                        <h2 class="card-title fs-5 fw-bold">ข้าเป็นบุรุษ(จริงๆ)นะ</h2>
                         <p class="card-text" style="color: #737373;">ชายรักชาย</p>
-                        <p style="color: #737373;">สำนักพิมพ์โรส</p>
+                        <p style="color: #737373;">วิหคสีรุ้ง</p>
                         <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">64</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">4K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">0</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">14</span>
+                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">77</span>
+                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">111.5K</span>
+                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">831</span>
+                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">6.8K</span>
                         </div>
                     </div>
                 </div>
-    
             </div>
-    
-            <div class="row d-flex align-items-center">
-                <!-- 10 -->
-                <div class="py-2 d-flex align-items-center
-                 col-lg-2 col-sm-4"><span class="fw-bold fs-1">10</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p5.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-5">
-                    <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">หทัยเจ้าจอม</h2>
-                        <p class="card-text" style="color: #737373;">ชายรักชาย</p>
-                        <p style="color: #737373;">Lulsant</p>
-                        <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">56</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">3.3k</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">53</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">1.8K</span>
-                        </div>
-                    </div>
+            <div class="top-3 col">
+                <div class="pin div">
+                    <img src="image/top-icon/top-3.svg" alt="top 1">
                 </div>
-    
-                <!-- 11 -->
-                <div class="py-2 d-flex align-items-center
-                col-lg-2 col-sm-4"><span class="fw-bold fs-1">11</span><img class="ps-2 img-fluid rounded-5 h-100 w-100"
-                        src="image/novel/p1.png" alt=""></div>
-    
-                <div class="col-lg-4 col-sm-6 ps-5">
+                <div class="card h-100">
+                    <img src="image/novel/p3.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="card-title fs-5 fw-bold pb-3">พรหมข้ามภพ</h2>
+                        <h2 class="card-title fs-5 fw-bold">เกรียนแบบนี้ ก็ศิษย์พี่ใหญ่นี่แหละ</h2>
                         <p class="card-text" style="color: #737373;">ชายรักชาย</p>
                         <p style="color: #737373;">Aradeer</p>
                         <div class="">
-                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">68</span>
-                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">2.7K</span>
-                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">12</span>
-                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2"
-                                style="color: #737373;">43</span>
+                            <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">1,155</span>
+                            <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">95.3K</span>
+                            <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">174</span>
+                            <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">1.8K</span>
                         </div>
                     </div>
                 </div>
-    
             </div>
         </div>
     </div>
-    
 
+    <!-- 4 - 11 -->
+    <div class="container mt-4">
+        <div class="row d-flex align-items-center">
+            <!-- 4 -->
+            <div class="py-2 d-flex align-items-center
+             col-lg-2 col-sm-4"><span class="fw-bold fs-1">4</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p12.png" alt=""></div>
 
-    <div id="footer">
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">โอม ตอนที่ 1 แรงอาฆาต</h2>
+                    <p class="card-text" style="color: #737373;">สืบสวน</p>
+                    <p style="color: #737373;">Aradeer</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">122</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">46.1K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">48</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">80K</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 5 -->
+            <div class="py-2 d-flex align-items-center
+            col-lg-2 col-sm-4"><span class="fw-bold fs-1">5</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p8.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">Inside</h2>
+                    <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
+                    <p style="color: #737373;">เบ๊อะบ๊ะ</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">31</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">40.6K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">282</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">1K</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <!-- 6 -->
+            <div class="py-2 d-flex align-items-center
+             col-lg-2 col-sm-4"><span class="fw-bold fs-1">6</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p7.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">อลินตา... หมอผีข้ามภพ</h2>
+                    <p class="card-text" style="color: #737373;"> ลึกลับ / สยองขวัญ</p>
+                    <p style="color: #737373;">ถุงแป้งหอม</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">355</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">36.2K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">1.3K</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">452</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="py-2 d-flex align-items-center
+            col-lg-2 col-sm-4"><span class="fw-bold fs-1">7</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p9.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">จนกว่าวันที่เจ้าจะเป็นของเรา</h2>
+                    <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
+                    <p style="color: #737373;">เบ๊อะบ๊ะ</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">31</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">29K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">338</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">456</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <!-- 8 -->
+            <div class="py-2 d-flex align-items-center
+             col-lg-2 col-sm-4"><span class="fw-bold fs-1">8</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p10.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
+                    <p class="card-text" style="color: #737373;">หญิงรักหญิง</p>
+                    <p style="color: #737373;">LONE-LY-LYNN</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">21</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">16K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">55</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">32</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="py-2 d-flex align-items-center
+            col-lg-2 col-sm-4"><span class="fw-bold fs-1">9</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p15.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-4">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">กลยุทธ์การเอาตัวรอดของตัวเบี้ยผู้กลับมาเกิดใหม่</h2>
+                    <p class="card-text" style="color: #737373;">ชายรักชาย</p>
+                    <p style="color: #737373;">สำนักพิมพ์โรส</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">64</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">4K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">0</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">14</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row d-flex align-items-center">
+            <!-- 10 -->
+            <div class="py-2 d-flex align-items-center
+             col-lg-2 col-sm-4"><span class="fw-bold fs-1">10</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p5.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-5">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">หทัยเจ้าจอม</h2>
+                    <p class="card-text" style="color: #737373;">ชายรักชาย</p>
+                    <p style="color: #737373;">Lulsant</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">56</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">3.3k</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">53</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">1.8K</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="py-2 d-flex align-items-center
+            col-lg-2 col-sm-4"><span class="fw-bold fs-1">11</span><img class="ps-2 img-fluid rounded-5 h-100 w-100" src="image/novel/p1.png" alt=""></div>
+
+            <div class="col-lg-4 col-sm-6 ps-5">
+                <div class="card-body">
+                    <h2 class="card-title fs-5 fw-bold pb-3">พรหมข้ามภพ</h2>
+                    <p class="card-text" style="color: #737373;">ชายรักชาย</p>
+                    <p style="color: #737373;">Aradeer</p>
+                    <div class="">
+                        <i class="bi bi-list-ul" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">68</span>
+                        <i class="bi bi-eye-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">2.7K</span>
+                        <i class="bi bi-chat-dots-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">12</span>
+                        <i class="bi bi-heart-fill" style="color: #737373;"></i><span class="ps-1 pe-2" style="color: #737373;">43</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+    <div id="footer"><!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid my-5 p-0">
+
+    <footer class="text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h6 class="text-white fw-bold pb-2">นักอ่าน</h6>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!">ชั้นหนังสือ</a>
+                        </li>
+                        <li>
+                            <a href="#!">ค้นหานิยาย</a>
+                        </li>
+                        <li>
+                            <a href="#!">หมวดหมู่</a>
+                        </li>
+                        <li>
+                            <a href="#!">จัดอันดับ</a>
+                        </li>
+                        <li>
+                            <a href="#!">เติมเหรียญ</a>
+                        </li>
+                        <li>
+                            <a href="#!">วิธีการซื้อนิยาย</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h6 class="text-white fw-bold pb-2">นักเขียน</h6>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">คู่มือนักเขียน</a>
+                        </li>
+                        <li>
+                            <a href="#!">เขียนนิยาย</a>
+                        </li>
+                        <li>
+                            <a href="#!">นิยายของฉัน</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-lg-0 pt-md-5 pt-sm-0">
+                    <h6 class="text-white fw-bold pb-2">ช่วยเหลือ</h6>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">คู่มือผู้ใช้</a>
+                        </li>
+                        <li>
+                            <a href="#!">คำถามที่พบบ่อย</a>
+                        </li>
+                        <li>
+                            <a href="#!">ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-lg-0 pt-md-5 pt-sm-0">
+                    <h6 class="text-white fw-bold pb-2">ช่องทางติดต่อ</h6>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!"><i class="contact-icon bi bi-facebook"></i>Read&amp;Write</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="contact-icon bi bi-twitter"></i>Read&amp;Write</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="contact-icon bi bi-line"></i>@readandwrite</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="contact-icon bi bi-envelope-fill"></i>ReadandWrite@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #01579B">
+            <div class="text-white">Copyrtight © 2023 Read&amp;Write by Pattheera Teerarujinont, Phetchapa Nuthong.</div>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</div>
+<!-- End of .container --></div>
     <script src="./navbar.js"></script>
-    <script src='./footer.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-</body>
+    <script src="./footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-</html>
+
+</div></body></html>
