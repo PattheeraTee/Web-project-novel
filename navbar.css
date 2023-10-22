@@ -256,6 +256,7 @@ nav .level1 li{
 nav .level2{
     position: absolute;
     background-color: #f7f7f7;
+    background-color: white;
     padding: 0rem;
     left: 0rem;
     top: 100%;
@@ -271,6 +272,7 @@ nav .nav-level2{
 }
 nav .level2 a,nav .level2 i{
     color: #8d8484;
+    color: #000000;
 }
 
 nav .level3{
@@ -316,10 +318,7 @@ li.level2-item:hover,li.level3-item:hover{
     min-width: 30px;
     flex-wrap: nowrap;
 }
-.home-nav a{
-    color: #FFD54F !important;
-    font-weight: bold;
-}
+
 @media (max-width: 576px) {
             .nav2 .navbar-nav {
                 flex-direction: column;
@@ -334,4 +333,4 @@ li.level2-item:hover,li.level3-item:hover{
                 padding: 1rem 0;
             }
             
-        }
+}

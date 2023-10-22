@@ -12,3 +12,11 @@
 span.card-text {
     font-size: 0.9rem;
 }
+
+.home-head{
+    color: #03A9F4;
+    
+}
+.home-nav a{
+    color: #ffd54f !important;
+}
