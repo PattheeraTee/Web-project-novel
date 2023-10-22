@@ -21,54 +21,54 @@
     <div id="navbar"></div>
     <div class="container">
         <h3 class="pb-3 tw-bold mt-5">ข้อมูลส่วนตัว</h3>
-        <div class="user-pictue d-flex just justify-content-between align-items-end">
-            <img src="./image/taeyeon.png" alt="taeyeon" class="img-fluid rounded-circle" width="200" height="200">
+        <div class="user-pictue ms-5 d-flex justify-content-between align-items-end">
+            <img src="./image/taeyeon.png" alt="taeyeon" class="img-fluid rounded-circle" width="100" height="100">
             <div>
                 <input type="file" id="file" style="display:none;" />
                 <button id="button" name="button" value="Upload" onclick="thisFileUpload();" class="btn btn-primary">เปลี่ยนรูปโปรไฟล์</button>
             </div>
         </div>
         <form action="#" class="mt-5">
-            <div class="mb-3 row">
-                <label for="staticusername" class="col-sm-2 col-form-label">ชื่อผู้ใช้ : </label>
-                <div class="col-sm-10">
+            <div class="mb-3 row ">
+                <label for="staticusername" class="col-sm-12 col-md-3 col-lg-2 col-form-label">ชื่อผู้ใช้ : </label>
+                <div class="col-sm-12 col-md-9 col-lg-6">
                     <input type="text" readonly class="form-control-plaintext" id="staticusername" value="miw_w">
                 </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="inputfakename" class="col-sm-2 col-form-label">นามปากกา : </label>
-                    <div class="col-sm-10">
+                    <label for="inputfakename" class="col-sm-12 col-md-3 col-lg-2 col-form-label">นามปากกา : </label>
+                    <div class="col-sm-12 col-md-9 col-lg-10">
                         <input type="text" class="form-control" id="inputfakename" value="sleepdog">
                     </div>
                 </div>
                 <div class="mb-3 row">
-                <label for="staticEmail" class="col-sm-2 col-form-label">อีเมล <span class="text-danger">*</span> : </label>
-                <div class="col-sm-10">
+                <label for="staticEmail" class="col-sm-12 col-md-3 col-lg-2 col-form-label">อีเมล <span class="text-danger">*</span> : </label>
+                <div class="col-sm-12 col-md-9 col-lg-10">
                     <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="pattheera.t@kkumail.com">
                 </div>
                 </div>
                 <div class="mb-3 row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">รหัสผ่าน <span class="text-danger">*</span> : </label>
-                     <div class="col-sm-10">
+                    <label for="inputPassword" class="col-sm-12 col-md-3 col-lg-2 col-form-label">รหัสผ่าน <span class="text-danger">*</span> : </label>
+                     <div class="col-sm-12 col-md-9 col-lg-10">
                         <input type="password" class="form-control" id="inputPassword" value="webdesign">
                     </div>
                 </div>
                 
                 <div class="mb-3 row">
-                    <label for="inputfirstname" class="col-sm-2 col-form-label">ชื่อ : </label>
-                    <div class="col-sm-10">
+                    <label for="inputfirstname" class="col-sm-12 col-md-3 col-lg-2 col-form-label">ชื่อ : </label>
+                    <div class="col-sm-12 col-md-9 col-lg-10">
                         <input type="text" class="form-control" id="inputfirstname" value="พัทธ์">
                     </div>
                 </div> 
                 <div class="mb-3 row">
-                    <label for="inputlastname" class="col-sm-2 col-form-label">นามสกุล : </label>
-                    <div class="col-sm-10">
+                    <label for="inputlastname" class="col-sm-12 col-md-3 col-lg-2 col-form-label">นามสกุล : </label>
+                    <div class="col-sm-12 col-md-9 col-lg-10">
                         <input type="text" class="form-control" id="inputlastname" value="ธี">
                     </div>
                 </div> 
                 <div class="mb-3 row">
-                    <label for="inputfirstname" class="col-sm-2 col-form-label">เพศ : </label>
-                    <div class="col-sm-10">
+                    <label for="inputfirstname" class="col-sm-12 col-md-3 col-lg-2 col-form-label">เพศ : </label>
+                    <div class="col-sm-12 col-md-9 col-lg-10">
                         <select class="form-select" aria-label="Default select example">
                             <option selected hidden>ไม่ระบุ</option>
                             <option value="male">ชาย</option>
@@ -82,13 +82,55 @@
                     <button class="btn btn-primary" type="submit">บันทึก</button>
                 </div>
         </form>
-        <h4>เชื่อมต่อบัญชี</h4>
-        <div class="d-flex flex-row align-items-center ">
-            <img src="./image/icons/20.svg" alt="facebook logo" class="img-fluid" width="60">
-            <p class="m-0 p-0">Facebook</p>
-            <p class="m-0 p-0">ไม่ได้เชื่อมต่อ</p>
-            <i class="bi bi-link-45deg"></i><a href="https://www.facebook.com" target="_blank">เชื่อมต่อ Facebook</a>
+        <h5 class="mb-4">เชื่อมต่อบัญชี</h5>
+        <div class="d-flex flex-row align-items-center justify-content-between connect ">
+            <div class="d-flex flex-row align-items-center sub-connect">
+                <img src="./image/icons/20.svg" alt="facebook logo" class="img-fluid" width="60">
+                <p class="m-0 p-0 ms-4">Facebook</p>
+            </div>
+            <p class="m-0 p-0 c2">ไม่ได้เชื่อมต่อ</p>
+            <div >
+                <i class="bi bi-link-45deg c2"></i>
+                <a href="https://www.facebook.com" target="_blank" class="text-decoration-none">เชื่อมต่อ Facebook</a>
+            </div>
         </div>
+        <hr>
+        <div class="d-flex flex-row align-items-center justify-content-between connect">
+            <div class="d-flex flex-row align-items-center">
+                <img src="./image/icons/21.svg" alt="google logo" class="img-fluid" width="60">
+                <p class="m-0 p-0 ms-4">Google</p>
+            </div>
+            <p class="m-0 p-0 c2">ไม่ได้เชื่อมต่อ</p>
+            <div >
+                <i class="bi bi-link-45deg c2"></i>
+                <a href="https://myaccount.google.com/" target="_blank" class="text-decoration-none">เชื่อมต่อ Google</a>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-row align-items-center justify-content-between connect">
+            <div class="d-flex flex-row align-items-center">
+                <img src="./image/icons/22.svg" alt="line logo" class="img-fluid" width="60">
+                <p class="m-0 p-0 ms-4">Line</p>
+            </div>
+            <p class="m-0 p-0 c2" id="c2">ไม่ได้เชื่อมต่อ</p>
+            <div>
+                <i class="bi bi-link-45deg c2"></i>
+                <a href="https://access.line.me/oauth2/v2.1/login?fromDomain=access-auto.line.me&loginState=nBeMaOY7Mdu5aFeSo1hVfn&line_auto_login_error=universal_link_error&loginChannelId=1445834080&returnUri=oauth2v2.1authorizeconsentbot_promptnormalscopeopenidprofileresponse_typecodestateRhiVgBoLDGredirect_urihttps3A2F2Fform.tonariwa.com2Fsuntory2Fmeasure_url3Fcpid3Dtennensui_sampling426lcd3D126type3D126nonceEvutxGZ894client_id1445834080#/" target="_blank" class="text-decoration-none ">เชื่อมต่อ Line</a>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-row align-items-center justify-content-between connect">
+            <div class="d-flex flex-row align-items-center">
+                <img src="./image/icons/23.svg" alt="apple logo" class="img-fluid" width="60">
+                <p class="m-0 p-0 ms-4">Apple ID</p>
+            </div>
+            <p class="m-0 p-0 c2">ไม่ได้เชื่อมต่อ</p>
+            <div>
+                <i class="bi bi-link-45deg c2"></i>
+                <a href="https://www.icloud.com" target="_blank" class="text-decoration-none">เชื่อมต่อ Apple ID</a>
+            </div>
+        </div>
+        <hr>
 
     </div>
     <div id="footer"></div>
