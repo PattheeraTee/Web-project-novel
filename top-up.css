@@ -10,9 +10,6 @@
     background-color: #01579B !important;
 }
 
-table {
-    font-size: 0.75rem;
-}
 
 .penname,
 .all-pay {
@@ -52,6 +49,10 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* box-shadow: 0rem 0.25rem 0.25rem 0rem #888888; */
+}
+.pay div:hover{
+    transform: scale(1.1);
     box-shadow: 0rem 0.25rem 0.25rem 0rem #888888;
 }
 
@@ -63,7 +64,7 @@ table {
 .all-pay span.pay div p,
 .detial-pay div span,
 .pay p {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 @media(min-width:768px) {
@@ -76,10 +77,10 @@ table {
         border-left: 2px solid #d9d9d9;
     }
 
-    .all-pay p,
+    /* .all-pay p,
     .all-pay span.pay div p,
     .detial-pay div span,
     .pay p {
         font-size: 1rem;
-    }
+    } */
 }
