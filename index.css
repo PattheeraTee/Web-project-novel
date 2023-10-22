@@ -20,3 +20,7 @@ span.card-text {
 .home-nav a{
     color: #ffd54f !important;
 }
+
+h2.name-to-read:hover {
+    color: #03A9F4;
+}
