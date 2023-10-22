@@ -3,6 +3,9 @@
     height: auto;
     color: #737373;
 }
+.read-novel-icon:hover{
+    color: #03A9F4;
+}
 /* .read-novel-icon{
     color: #03A9F4;
 } */
