@@ -11,191 +11,201 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="./footer.css">
-        <link rel="stylesheet" href="./font.css">
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./font.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Sarabun&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="navbar"></div>
     <div class="container-fluid m-0 p-0">
+        <div class="container">
+            <h3 class="pb-3 tw-bold mt-5">ชั้นหนังสือ</h3>
+            <div class="container py-2">
+                <!-- tabs -->
+                <ul class="nav nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-novel-tab" data-bs-toggle="tab" data-bs-target="#nav-novel"
+                            type="button" role="tab" aria-controls="nav-novel" aria-selected="true">นิยาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-bookm-tab" data-bs-toggle="tab" data-bs-target="#nav-bookm"
+                            type="button" role="tab" aria-controls="nav-novel" aria-selected="false">บุ๊คมาร์ค</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-foll-tab" data-bs-toggle="tab" data-bs-target="#nav-foll"
+                            type="button" role="tab" aria-controls="nav-novel" aria-selected="false">ติดตาม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-read-tab" data-bs-toggle="tab" data-bs-target="#nav-read"
+                            type="button" role="tab" aria-controls="nav-novel" aria-selected="false">อ่านล่าสุด</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-ment-tab" data-bs-toggle="tab" data-bs-target="#nav-ment"
+                            type="button" role="tab" aria-controls="nav-novel" aria-selected="false">คอมเมนต์</a>
+                    </li>
+                </ul>
 
-   
-    <div class="container">
-        <h3 class="pb-3 tw-bold mt-5">ชั้นหนังสือ</h3>
-        <div class="container py-2">
-            <!-- tabs -->
-            <nav>
-                <div class="nav nav-underline justify-content-center" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-novel-tab" data-bs-toggle="tab" data-bs-target="#nav-novel"
-                        type="button" role="tab" aria-controls="nav-novel" aria-selected="true">นิยาย</button>
+                <!-- content -->
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active p-3" id="nav-novel" role="tabpanel"
+                        aria-labelledby="nav-novel-tab">
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p6.png" alt="">
+                                    <h2 class="fw-bold fs-5 pt-3">Lilith: Dedth's Order</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 3 วันที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p2.png" alt="">
+                                    <h2 class="fw-bold fs-5 pt-3">ดั่งอธิษฐาน</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 7 วันที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p11.png" alt="">
+                                    <h2 class="fw-bold fs-5 pt-3">กาลครั้งหนึ่งนับนิรันดร์</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 1 ชั่วโมงที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p13.png" alt="">
+                                    <h2 class="fw-bold fs-5 pt-3">คดีลึกลับ กับรักอันผิดเพี้ยน</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 1ปีที่แล้ว</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p5.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">หทัยเจ้าจอม</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 3 วันที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p7.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">อลินตา... หมอผีข้ามภพ</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 7 วันที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p14.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">ข้าเป็นบุรุษ (จริง ๆ) นะ</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 1 ชั่วโมงที่แล้ว</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
+                                    <p style="color: #737373;">อัปเดตเมื่อ 1ปีที่แล้ว</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <button class="nav-link" id="nav-bookm-tab" data-bs-toggle="tab" data-bs-target="#nav-bookm"
-                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">บุ๊คมาร์ค</button>
-
-                    <button class="nav-link" id="nav-foll-tab" data-bs-toggle="tab" data-bs-target="#nav-foll"
-                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">ติดตาม</button>
-
-                    <button class="nav-link" id="nav-read-tab" data-bs-toggle="tab" data-bs-target="#nav-read"
-                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">อ่านล่าสุด</button>
-
-                    <button class="nav-link" id="nav-ment-tab" data-bs-toggle="tab" data-bs-target="#nav-ment"
-                        type="button" role="tab" aria-controls="nav-novel" aria-selected="false">คอมเมนต์</button>
-                </div>
-            </nav>
-
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active p-3" id="nav-novel" role="tabpanel"
-                    aria-labelledby="nav-novel-tab">
-                    <!-- content -->
-                    <div class="container my-3">
+                    <div class="tab-pane fade show p-3" id="nav-bookm" role="tabpanel" aria-labelledby="nav-bookm-tab">
                         <div class="row">
                             <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p6.png" alt="">
-                                <h2 class="fw-bold fs-5 pt-3">Lilith: Dedth's Order</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 3 วันที่แล้ว</p>
+                                <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="">
+                                <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
+                                <p style="color: #737373;">ตอนที่ 10</p>
                             </div>
                             <div class="col-lg-3">
                                 <img class="img-fluid rounded-5" src="image/novel/p2.png" alt="">
                                 <h2 class="fw-bold fs-5 pt-3">ดั่งอธิษฐาน</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 7 วันที่แล้ว</p>
+                                <p style="color: #737373;">ตอนที่ 1</p>
                             </div>
                             <div class="col-lg-3">
                                 <img class="img-fluid rounded-5" src="image/novel/p11.png" alt="">
                                 <h2 class="fw-bold fs-5 pt-3">กาลครั้งหนึ่งนับนิรันดร์</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 1 ชั่วโมงที่แล้ว</p>
+                                <p style="color: #737373;">ตอนที่ 94</p>
                             </div>
                             <div class="col-lg-3">
                                 <img class="img-fluid rounded-5" src="image/novel/p13.png" alt="">
                                 <h2 class="fw-bold fs-5 pt-3">คดีลึกลับ กับรักอันผิดเพี้ยน</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 1ปีที่แล้ว</p>
+                                <p style="color: #737373;">ตอนที่ 2</p>
                             </div>
                         </div>
                     </div>
-                    <div class="container my-3">
+
+                    <div class="tab-pane fade show p-3" id="nav-foll" role="tabpanel" aria-labelledby="nav-foll-tab">
                         <div class="row">
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p5.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">หทัยเจ้าจอม</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 3 วันที่แล้ว</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p7.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">อลินตา... หมอผีข้ามภพ</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 7 วันที่แล้ว</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p14.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">ข้าเป็นบุรุษ (จริง ๆ) นะ</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 1 ชั่วโมงที่แล้ว</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
-                                <p style="color: #737373;">อัปเดตเมื่อ 1ปีที่แล้ว</p>
+                            <div class="col-lg-3 text-center">
+                                <img class="img-fluid" src="image/novel/p11.png" alt="writter"
+                                    style="border-radius: 100%;">
+                                <h2 class="fw-bold fs-5 pt-3">Mu</h2>
+                                <p style="color: #737373;">ผู้ติดตาม <span>14,021</span></p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="tab-pane fade show p-3" id="nav-bookm" role="tabpanel" aria-labelledby="nav-bookm-tab">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="">
-                            <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
-                            <p style="color: #737373;">ตอนที่ 10</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <img class="img-fluid rounded-5" src="image/novel/p2.png" alt="">
-                            <h2 class="fw-bold fs-5 pt-3">ดั่งอธิษฐาน</h2>
-                            <p style="color: #737373;">ตอนที่ 1</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <img class="img-fluid rounded-5" src="image/novel/p11.png" alt="">
-                            <h2 class="fw-bold fs-5 pt-3">กาลครั้งหนึ่งนับนิรันดร์</h2>
-                            <p style="color: #737373;">ตอนที่ 94</p>
-                        </div>
-                        <div class="col-lg-3">
-                            <img class="img-fluid rounded-5" src="image/novel/p13.png" alt="">
-                            <h2 class="fw-bold fs-5 pt-3">คดีลึกลับ กับรักอันผิดเพี้ยน</h2>
-                            <p style="color: #737373;">ตอนที่ 2</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade show p-3" id="nav-foll" role="tabpanel" aria-labelledby="nav-foll-tab">
-                    <div class="row">
-                        <div class="col-lg-3 text-center">
-                            <img class="img-fluid" src="image/novel/p11.png" alt="writter" style="border-radius: 100%;">
-                            <h2 class="fw-bold fs-5 pt-3">Mu</h2>
-                            <p style="color: #737373;">ผู้ติดตาม <span>14,021</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade show p-3" id="nav-read" role="tabpanel" aria-labelledby="nav-read-tab">
-                    <div class="container my-3">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p5.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">หทัยเจ้าจอม</h2>
-                                <p style="color: #737373;">1 วันที่ผ่านมา</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p7.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">อลินตา... หมอผีข้ามภพ</h2>
-                                <p style="color: #737373;">1 วันที่ผ่านมา</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p14.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">ข้าเป็นบุรุษ (จริง ๆ) นะ</h2>
-                                <p style="color: #737373;">9 วันที่ผ่านมา</p>
-                            </div>
-                            <div class="col-lg-3">
-                                <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="...">
-                                <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
-                                <p style="color: #737373;">30 วันที่ผ่านมา</p>
+                    <div class="tab-pane fade show p-3" id="nav-read" role="tabpanel" aria-labelledby="nav-read-tab">
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p5.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">หทัยเจ้าจอม</h2>
+                                    <p style="color: #737373;">1 วันที่ผ่านมา</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p7.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">อลินตา... หมอผีข้ามภพ</h2>
+                                    <p style="color: #737373;">1 วันที่ผ่านมา</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p14.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">ข้าเป็นบุรุษ (จริง ๆ) นะ</h2>
+                                    <p style="color: #737373;">9 วันที่ผ่านมา</p>
+                                </div>
+                                <div class="col-lg-3">
+                                    <img class="img-fluid rounded-5" src="image/novel/p10.png" alt="...">
+                                    <h2 class="fw-bold fs-5 pt-3">เป็นนางร้ายอยู่ดี ๆ ทำไมนางเอกมาชอบฉันล่ะ</h2>
+                                    <p style="color: #737373;">30 วันที่ผ่านมา</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="tab-pane fade show p-3" id="nav-ment" role="tabpanel" aria-labelledby="nav-ment-tab"  style="background-color: #f7f7f7;  box-shadow:0px 2px 4px 0px #737373;">
-                    <div class="d-flex ">
-                        <div class="person1 d-flex justify-content-start align-items-start text-start m-4" >
-                            <div class="d-flex flex-column justify-content-start align-items-lg-start p-1 px-2">
-                                    <p class="fw-bold fw-01">คอมเมนต์ของฉันจากเรื่องเปิดระบบสุดโดงอัปสกิลหมอ จาดตอนที่ 1  ชีวิตกลายเป็นเกม</p>
+                    <div class="tab-pane fade show p-3 mt-4" id="nav-ment" role="tabpanel" aria-labelledby="nav-ment-tab"
+                        style="background-color: #f7f7f7;  box-shadow:0px 2px 4px 0px #737373;">
+                        <div class="d-flex ">
+                            <div class="person1 d-flex justify-content-start align-items-start text-start m-4">
+                                <div class="d-flex flex-column justify-content-start align-items-lg-start p-1 px-2">
+                                    <p class="fw-bold fw-01">คอมเมนต์ของฉันจากเรื่องเปิดระบบสุดโดงอัปสกิลหมอ จาดตอนที่ 1
+                                        ชีวิตกลายเป็นเกม</p>
                                     <div>
-                                        <p>จากการอ่านคอมเม้นรีวิว อยากแนะนำ สนพ ค่ะ 2000 ตอน อัพวันละตอน 7 ปีกว่า ถึงจะจบ เราคิดว่า เรารอขนาดนั้นไม่ไหวค่ะ กลัวจะเทไปก่อน ถ้าเป็นไปได้ 2-3 ปีจบ ยังโอเคนะคะ ถ้า 7 ปีจบ ขอพิจารณาอีกทีค่ะ ดีไม่ดี กลัวแปลไม่จบด้วย ถ้า สนพ มาเห็น รบกวนแถลงการณ์ หรือเพิ่มจำนวนตอนด้วยนะคะ ขอบคุณค่ะ</p>
+                                        <p>จากการอ่านคอมเม้นรีวิว อยากแนะนำ สนพ ค่ะ 2000 ตอน อัพวันละตอน 7 ปีกว่า
+                                            ถึงจะจบ เราคิดว่า เรารอขนาดนั้นไม่ไหวค่ะ กลัวจะเทไปก่อน ถ้าเป็นไปได้ 2-3
+                                            ปีจบ ยังโอเคนะคะ ถ้า 7 ปีจบ ขอพิจารณาอีกทีค่ะ ดีไม่ดี กลัวแปลไม่จบด้วย ถ้า
+                                            สนพ มาเห็น รบกวนแถลงการณ์ หรือเพิ่มจำนวนตอนด้วยนะคะ ขอบคุณค่ะ</p>
                                     </div>
                                     <p style="color: #737373;">09-10-2566 04.30</p>
+                                </div>
+
                             </div>
-                        
-                        </div> 
-                        <div class="delete d-flex m-5 p-5">
-                            <button type="button" class="fb btn btn-primary mx-auto align-items-center justify-content-center px-4">ลบ</button>
+                            <div class="delete d-flex m-5 p-5">
+                                <button type="button"
+                                    class="fb btn btn-primary mx-auto align-items-center justify-content-center px-4">ลบ</button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end comment-icons">
+                            <i class="bi bi-hand-thumbs-up-fill me-2"></i>
+                            <p class="me-2">223</p>
+                            <i class="bi bi-hand-thumbs-down-fill me-2"></i>
+                            <p class="m">3</p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end comment-icons">
-                        <i class="bi bi-hand-thumbs-up-fill me-2"></i>
-                        <p class="me-2">223</p>
-                        <i class="bi bi-hand-thumbs-down-fill me-2"></i>
-                        <p class="m">3</p>
-                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-    <div id="footer"></div>
-    <script src="./navbar.js"></script>
-    <script src='./footer.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+
+        <div id="footer"></div>
+        <script src="./navbar.js"></script>
+        <script src='./footer.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

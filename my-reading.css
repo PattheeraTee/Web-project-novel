@@ -1,13 +1,10 @@
 .tabs {
     border: 1px solid black;
     background-color: #fef4eb;
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 4rem;
 }
 
 .tabs_label {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     padding: 1rem 1rem;
     margin-right: 1rem;
     cursor: pointer;
@@ -40,7 +37,6 @@
 .tabs_content h2.type_myblog {
     background-color: white;
     display: inline-block;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     letter-spacing: 0.5rem;
     font-weight: lighter;
     margin-top: 3rem;
