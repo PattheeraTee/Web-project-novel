@@ -1,3 +1,7 @@
+.nav-link {
+    color: black;
+}
+
 .follow button {
     background-color: #03A9F4 !important;
     border-color: #03A9F4 !important;
@@ -5,29 +9,21 @@
 
 .follow button:hover {
     color: #ffffff !important;
-    border-color: #01579B !important;
-    background-color: #01579B !important;
+    border-color: #03A9F4 !important;
+    background-color: #03A9F4 !important;
 }
 
-.nav-underline .nav-link.active{
-    color: #03A9F4;
+.nav-underline .nav-link.active {
+    color: #03A9F4 !important;
 }
-
-/* .nav-link {
-    color: black ;
-} */
 
 .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
     font-weight: 700;
-    color: #0dcaf0;
+    color: #03A9F4 !important;
     border-bottom-color: currentcolor;
 }
 
 .nav {
     display: flex;
     justify-content: center;
-}
-
-.nav button {
-    margin: 0 5rem;
 }
