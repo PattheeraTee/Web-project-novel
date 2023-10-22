@@ -74,11 +74,15 @@
                                 <span id="bookmarkText">เพิ่มเข้าชั้น</span>
                             </button>
                             <!-- readnow -->
-                            <div type="button" class="btn btn-info me-2"
+                            <!-- <div type="button" class="btn btn-info me-2"
                                 style="color: #ffffff; background-color: #03A9F4; border-color: #03A9F4;">
                                 <i class="bi bi-eye-fill"></i>
                                 <a class="text-decoration-none text-reset" href="reading-novel.html">อ่านเลย</a>
-                            </div>
+                            </div> -->
+                            <button onclick="goToReadPage()" type="button" class="btn btn-info me-2"
+                            style="color: #ffffff; background-color: #03A9F4; border-color: #03A9F4;">
+                            <i class="bi bi-eye-fill pe-1"></i>อ่านเลย
+                        </button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +171,7 @@
                         <span class="oldtonew ms-5" style="color: #03A9F4;">
                             <i class="bi bi-arrow-up" style="color: #03A9F4;"></i>
                             <i class="bi bi-arrow-down" style="margin-left: -0.75rem; color: #03A9F4;"></i>
-                            <span id="toggleText">เก่าไปใหม่</span>
+                            <span id="toggleText1">เก่าไปใหม่</span>
                         </span>
                     </th>
                 </tr>
@@ -230,7 +234,7 @@
                         <span class="oldtonew ms-1" style="color: #03A9F4; font-size: 0.75rem;">
                             <i class="bi bi-arrow-up" style="color: #03A9F4;"></i>
                             <i class="bi bi-arrow-down" style="margin-left: -0.75rem; color: #03A9F4;"></i>
-                            <span id="toggleText">เก่าไปใหม่</span>
+                            <span id="toggleText2">เก่าไปใหม่</span>
                         </span>
                     </th>
                 </tr>
@@ -317,17 +321,17 @@
     <div class="read-novel container mb-5 pb-3">
         <h5 class="fs-4 fw-bold p-3 ps-2 mb-2 pb-0">บริจาคเงินให้นักเขียน</h5>
         <div class="earn-money d-flex align-items-center justify-content-center">
-            <button type="button" class="btn btn-outline-info px-4 rounded-4 mx-2 btn-rd">
-                <div class="d-flex col-md-start align-items-center">
-                    <div class="coin ">
-                        <img src="./image/bank/coin.svg" style="width: 1rem;" alt="coin">
-                    </div>
+            <button type="button" class="btn btn-outline-info px-4 rounded-4 mx-2 btn-rd d-flex col-md-start align-items-center">
+                  
+                        <img src="./image/bank/coin.svg" style="width: 1rem;" alt="coin" class="coin ">
+                    
                    <span class="ms-2">บริจาคเงิน</span>
             </button>
+           
         </div>
     </div>
     <div class="read-novel container mb-5">
-        <h5 table-contentclass="fs-4 fw-bold p-3 ps-2 mb-2 pb-0">เพิ่มความคิดเห็น</h5>
+        <h5 class="fs-4 fw-bold p-3 ps-2 mb-2 pb-0">เพิ่มความคิดเห็น</h5>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2" style="color: #737373;">Comments</label>
@@ -340,7 +344,7 @@
         <h5 class="fs-4 fw-bold p-3 ps-2 m-0 pb-0" id="comment-novel">ความคิดเห็น (3)</h5> <hr>
         <div class="person1 d-flex justify-content-start align-items-start text-start m-4">
             <div class="me-4">
-                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130" height="auto">
+                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130">
             </div>
             <div class="d-flex flex-column justify-content-start align-items-lg-start p-1 px-2">
                     <p class="my-auto" style="color:#03a9f4;">II_R</p>
@@ -362,7 +366,7 @@
         <hr>
         <div class="person1 d-flex justify-content-start align-items-start text-start m-4">
             <div class="me-4">
-                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130" height="auto">
+                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130">
             </div>
             <div class="d-flex flex-column justify-content-start align-items-lg-start p-1 px-2">
                     <p class="my-auto" style="color:#03a9f4;">II_R</p>
@@ -384,7 +388,7 @@
         <hr>
         <div class="person1 d-flex justify-content-start align-items-start text-start m-4">
             <div class="me-4">
-                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130" height="auto">
+                <img src="./image/novel/p3.png" alt="รูปโปรไฟล์" class="rounded-5 img-fluid" width="130" >
             </div>
             <div class="d-flex flex-column justify-content-start align-items-lg-start p-1 px-2">
                     <p class="my-auto" style="color:#03a9f4;">II_R</p>
@@ -467,17 +471,25 @@
     <script>
         let toggleClicked = false;
 
-        const toggleText = document.getElementById("toggleText");
+        const toggleText1 = document.getElementById("toggleText1");
+        const toggleText2 = document.getElementById("toggleText2");
 
         document.querySelector(".oldtonew").addEventListener("click", function () {
             if (toggleClicked) {
-                toggleText.textContent = "เก่าไปใหม่";
+                toggleText1.textContent = "เก่าไปใหม่";
+                toggleText2.textContent = "เก่าไปใหม่";
             } else {
-                toggleText.textContent = "ใหม่ไปเก่า";
+                toggleText1.textContent = "ใหม่ไปเก่า";
+                toggleText2.textContent = "ใหม่ไปเก่า";
             }
 
             toggleClicked = !toggleClicked;
         });
+        function goToReadPage() {
+            const url2 = "reading-novel.html";
+            window.location.href = url2;
+        }
+    
     </script>
 
     <script src="./navbar.js"></script>
