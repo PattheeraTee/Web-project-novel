@@ -10,6 +10,10 @@
     background-color: #01579B !important;
 }
 
+table {
+    font-size: 0.75rem;
+}
+
 .penname,
 .all-pay {
     box-shadow: 0rem 0.25rem 0.25rem 0rem #888888;
